@@ -120,6 +120,52 @@ a {
     width: 100%;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-lg);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    margin-top: 0.5rem;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+.dropdown-menu a::after {
+    display: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--bg-light);
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -705,6 +751,408 @@ a {
     margin: 0;
 }
 
+/* ========================================
+   PROJECT PAGE STYLES
+   ======================================== */
+
+/* Project Hero */
+.project-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0 60px;
+    margin-top: 70px;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: 0.7;
+}
+
+.project-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 800px;
+}
+
+/* Vision Gallery */
+.vision-gallery {
+    padding: 0;
+    background: var(--bg-white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.gallery-main {
+    width: 100%;
+    display: block;
+}
+
+.gallery-secondary {
+    width: 100%;
+    display: block;
+}
+
+/* Project Overview */
+.project-overview {
+    padding: 80px 0;
+    background: var(--bg-white);
+}
+
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.overview-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.lead-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.overview-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+/* Why Section */
+.why-section {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.why-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.why-card {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.why-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.why-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.why-card p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background: var(--bg-white);
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    padding: 2rem;
+    border-left: 4px solid var(--primary-color);
+    background: var(--bg-light);
+    border-radius: 0.5rem;
+}
+
+.feature-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.feature-item p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Implementation Section */
+.implementation-section {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.implementation-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.phases-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.phase {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.phase-marker {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.phase-content {
+    background: var(--bg-white);
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+    flex: 1;
+    box-shadow: var(--shadow-sm);
+}
+
+.phase-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.phase-content p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Budget Section */
+.budget-section {
+    padding: 80px 0;
+    background: var(--bg-white);
+}
+
+.budget-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.budget-breakdown {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.budget-item {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.budget-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.budget-amount {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.budget-desc {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.budget-total {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.budget-total h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.budget-total .budget-amount {
+    color: white;
+    font-size: 2.25rem;
+}
+
+/* Partnership Section */
+.partnership-section {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.partnership-content h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.partnership-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.partnership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.partnership-item {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.partnership-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.partnership-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.partnership-item p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Project CTA */
+.project-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.project-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-cta p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -769,13 +1217,29 @@ a {
     }
     
     .nav-menu.active {
-        max-height: 400px;
+        max-height: 500px;
     }
     
     .nav-menu li {
         width: 100%;
         text-align: center;
         padding: 0.75rem 0;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0.5rem;
+        background: var(--bg-light);
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
     }
     
     .hero {
@@ -812,6 +1276,44 @@ a {
     
     .partnerships-list {
         grid-template-columns: 1fr;
+    }
+    
+    /* Project Page Mobile Styles */
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .phases-timeline {
+        gap: 1.5rem;
+    }
+    
+    .phase {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .phase-marker {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    
+    .budget-breakdown {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
     }
 }
 
