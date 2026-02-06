@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Society Affiliates - We Got You</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: #fff;
+        }
+
+        /* Hero - Bold, Direct, Visual */
+        .hero {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .cta-big {
+            background: white;
+            color: #FF6B35;
+            padding: 20px 40px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin: 10px;
+        }
+
+        /* Quick Access Cards - Big, Touchable */
+        .quick-access {
+            padding: 30px 20px;
+            background: #f5f5f5;
+        }
+
+        .quick-access h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 6px solid #FF6B35;
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .service-card .action-btn {
+            background: #FF6B35;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Real Talk Section - Cliff's Story */
+        .real-talk {
+            padding: 40px 20px;
+            background: #2C3E50;
+            color: white;
+        }
+
+        .real-talk h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .founder-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .founder-box img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #FF6B35;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .founder-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* What We Actually Do */
+        .what-we-do {
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .what-we-do h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .offering {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            background: #FFF9F0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #F7931E;
+        }
+
+        .offering h3 {
+            font-size: 1.3rem;
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+
+        .offering ul {
+            margin-left: 20px;
+        }
+
+        .offering li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        /* Contact - Simple and Direct */
+        .contact {
+            background: #FF6B35;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-options {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-btn {
+            background: white;
+            color: #FF6B35;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            text-decoration: none;
+            display: block;
+            margin: 15px 0;
+        }
+
+        @media (min-width: 600px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>WE GOT YOU. 💯</h1>
+        <p class="tagline">Real help. Real opportunities. Right here in Syracuse.</p>
+        <a href="#services" class="cta-big">See What's Available</a>
+        <a href="#contact" class="cta-big">Get Connected Now</a>
+    </div>
+
+    <section id="services" class="quick-access">
+        <h2>What Do You Need Right Now?</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">💼</div>
+                <h3>Job Help</h3>
+                <p>Resume help, interview prep, job leads, training programs</p>
+                <a href="#" class="action-btn">Find Jobs →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🍎</div>
+                <h3>Food Resources</h3>
+                <p>Food banks, meal programs, SNAP assistance</p>
+                <a href="#" class="action-btn">Get Food →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📚</div>
+                <h3>Education</h3>
+                <p>GED programs, tutoring, college info, skills training</p>
+                <a href="#" class="action-btn">Start Learning →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🏠</div>
+                <h3>Housing Help</h3>
+                <p>Emergency shelter, rent assistance, housing programs</p>
+                <a href="#" class="action-btn">Find Housing →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">⚖️</div>
+                <h3>Legal Support</h3>
+                <p>Know your rights, legal aid, record help</p>
+                <a href="#" class="action-btn">Get Legal Help →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🎯</div>
+                <h3>Mentorship</h3>
+                <p>Connect with someone who's been there</p>
+                <a href="#" class="action-btn">Find a Mentor →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="real-talk">
+        <h2>Real Talk from Clifford</h2>
+        <div class="founder-box">
+            <img src="clifford-ryan-jr.png" alt="Clifford Ryan Jr.">
+            <p><strong>I've been where you are.</strong> I know what it's like when the system isn't built for you. When doors stay closed no matter how hard you knock.</p>
+            <p>That's why we started United Society Affiliates - to be the people who actually open those doors. To connect you with opportunities that can change your life.</p>
+            <p>We're not just handing out pamphlets. We're walking with you, connecting you with real people and real resources. Because everyone deserves a shot.</p>
+            <p><strong>- Clifford Ryan Jr., Founder</strong></p>
+        </div>
+    </section>
+
+    <section class="what-we-do">
+        <h2>Here's What We Actually Do</h2>
+        
+        <div class="offering">
+            <h3>🤝 We Connect You to Programs</h3>
+            <ul>
+                <li>Food assistance programs</li>
+                <li>Job training and placement</li>
+                <li>Educational opportunities</li>
+                <li>Legal resources</li>
+                <li>Housing support</li>
+            </ul>
+        </div>
+
+        <div class="offering">
+            <h3>📖 We Run Workshops</h3>
+            <ul>
+                <li>Financial literacy</li>
+                <li>Legal rights education</li>
+                <li>Job readiness</li>
+                <li>Life skills</li>
+            </ul>
+        </div>
+
+        <div class="offering">
+            <h3>✊ We Advocate for You</h3>
+            <ul>
+                <li>Help navigating systems</li>
+                <li>Support with applications</li>
+                <li>Understanding your rights</li>
+                <li>Getting your voice heard</li>
+            </ul>
+        </div>
+
+        <div class="offering">
+            <h3>👥 We Match You with Mentors</h3>
+            <ul>
+                <li>One-on-one guidance</li>
+                <li>People who've been there</li>
+                <li>Long-term support</li>
+                <li>Real relationships</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Get You Connected</h2>
+        <div class="contact-options">
+            <a href="tel:315-XXX-XXXX" class="contact-btn">📞 Call Us: (315) XXX-XXXX</a>
+            <a href="sms:315-XXX-XXXX" class="contact-btn">💬 Text Us: (315) XXX-XXXX</a>
+            <a href="mailto:info@unitedsocietyaffiliates.org" class="contact-btn">📧 Email Us</a>
+            <a href="#" class="contact-btn">📍 Visit Us in Syracuse</a>
+        </div>
+        <p style="margin-top: 30px; font-size: 1.2rem;">We're here Monday-Friday, 9am-6pm<br>Walk-ins welcome. No appointment needed.</p>
+    </section>
+</body>
+</html>
