@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Society Affiliates - Your Community Connection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        /* App-Style Header */
+        .header {
+            background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Story-Style Top Bar */
+        .stories {
+            background: #1a1a1a;
+            padding: 15px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .story {
+            display: inline-block;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        .story-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #1DB954, #1ed760);
+            padding: 3px;
+            margin: 0 auto 8px;
+        }
+
+        .story-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+        }
+
+        .story-label {
+            font-size: 0.75rem;
+            color: white;
+        }
+
+        /* Feed-Style Cards */
+        .feed {
+            padding: 0;
+        }
+
+        .post {
+            background: #1a1a1a;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .post-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1DB954, #1ed760);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 12px;
+        }
+
+        .post-info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .post-info .badge {
+            background: #1DB954;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            background: #1DB954;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            flex: 1;
+        }
+
+        .action-btn.secondary {
+            background: #333;
+        }
+
+        /* Quick Links - Bottom Navigation Style */
+        .quick-links {
+            background: #1a1a1a;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .quick-links h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .link-card {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .link-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+
+        .link-card .label {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Success Stories - Carousel Style */
+        .success-stories {
+            background: #000;
+            padding: 25px 20px;
+        }
+
+        .success-stories h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #1DB954;
+        }
+
+        .story-card {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #1DB954;
+        }
+
+        .story-card .quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .story-card .author {
+            color: #1DB954;
+            font-weight: 600;
+        }
+
+        /* Bottom CTA */
+        .bottom-cta {
+            background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .bottom-cta h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            background: white;
+            color: #1DB954;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: inline-block;
+            text-decoration: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>United Society Affiliates 🔥</h1>
+        <p>Syracuse Community Connection</p>
+    </div>
+
+    <div class="stories">
+        <div class="story">
+            <div class="story-circle">
+                <div class="story-inner">💼</div>
+            </div>
+            <div class="story-label">Jobs</div>
+        </div>
+        <div class="story">
+            <div class="story-circle">
+                <div class="story-inner">🍎</div>
+            </div>
+            <div class="story-label">Food</div>
+        </div>
+        <div class="story">
+            <div class="story-circle">
+                <div class="story-inner">🏠</div>
+            </div>
+            <div class="story-label">Housing</div>
+        </div>
+        <div class="story">
+            <div class="story-circle">
+                <div class="story-inner">📚</div>
+            </div>
+            <div class="story-label">Education</div>
+        </div>
+        <div class="story">
+            <div class="story-circle">
+                <div class="story-inner">⚖️</div>
+            </div>
+            <div class="story-label">Legal</div>
+        </div>
+        <div class="story">
+            <div class="story-circle">
+                <div class="story-inner">💪</div>
+            </div>
+            <div class="story-label">Mentors</div>
+        </div>
+    </div>
+
+    <div class="feed">
+        <div class="post">
+            <div class="post-header">
+                <div class="post-avatar">💼</div>
+                <div class="post-info">
+                    <h3>New Job Opportunities</h3>
+                    <span class="badge">AVAILABLE NOW</span>
+                </div>
+            </div>
+            <div class="post-content">
+                <p><strong>Amazon hiring in Syracuse!</strong> Warehouse positions starting at $18.50/hr. We can help with your application and prep you for the interview. No experience needed - they train you.</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-btn">Apply Now</button>
+                <button class="action-btn secondary">Get Help</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <div class="post-avatar">📚</div>
+                <div class="post-info">
+                    <h3>Free GED Classes Starting</h3>
+                    <span class="badge">REGISTER TODAY</span>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Starting next week! Tuesday & Thursday evenings, 6-8pm. Free materials, free tutoring, childcare available. Get your high school equivalency and open new doors.</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-btn">Sign Up</button>
+                <button class="action-btn secondary">Learn More</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <div class="post-avatar">🎤</div>
+                <div class="post-info">
+                    <h3>Clifford Ryan Jr.</h3>
+                    <span class="badge">FOUNDER</span>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Real talk: I've been locked up. I've struggled. I know what it's like when the world counts you out. But here's what I learned - you just need someone to believe in you and show you the way.</p>
+                <p>That's what we do at United Society Affiliates. We connect you with opportunities, help you navigate the system, and walk with you. You're not alone. 💯</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-btn">Connect with Clifford</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <h2>What Do You Need?</h2>
+        <div class="links-grid">
+            <div class="link-card">
+                <div class="icon">🍎</div>
+                <div class="label">Food Today</div>
+            </div>
+            <div class="link-card">
+                <div class="icon">💼</div>
+                <div class="label">Find Work</div>
+            </div>
+            <div class="link-card">
+                <div class="icon">⚖️</div>
+                <div class="label">Legal Help</div>
+            </div>
+            <div class="link-card">
+                <div class="icon">🏠</div>
+                <div class="label">Housing</div>
+            </div>
+            <div class="link-card">
+                <div class="icon">📱</div>
+                <div class="label">Call/Text Us</div>
+            </div>
+            <div class="link-card">
+                <div class="icon">👥</div>
+                <div class="label">Get a Mentor</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-stories">
+        <h2>Real People, Real Results</h2>
+        
+        <div class="story-card">
+            <div class="quote">"I was sleeping in my car. United Society Affiliates connected me with emergency housing, helped me get my CDL, and now I'm driving trucks making good money. Changed my whole life."</div>
+            <div class="author">- Marcus, Syracuse</div>
+        </div>
+
+        <div class="story-card">
+            <div class="quote">"After getting out, I didn't know where to start. They helped me get my record expunged, found me job training, and matched me with a mentor. Three years later I'm running my own landscaping business."</div>
+            <div class="author">- Jason, North Side</div>
+        </div>
+
+        <div class="story-card">
+            <div class="quote">"My kids were going hungry and I was too proud to ask for help. United Society Affiliates didn't judge - they just connected me to food programs, helped me apply for assistance, and got me into job training. Now I'm working and my family is stable."</div>
+            <div class="author">- Shanice, Single Mom</div>
+        </div>
+    </div>
+
+    <div class="bottom-cta">
+        <h2>Ready to Get Started?</h2>
+        <p style="margin-bottom: 20px;">No judgement. No paperwork maze. Just real help.</p>
+        <a href="tel:315-XXX-XXXX" class="cta-button">📞 Call Now</a>
+        <a href="sms:315-XXX-XXXX" class="cta-button">💬 Text Us</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Society Affiliates - Let's Talk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #E5DDD5;
+            padding-bottom: 80px;
+        }
+
+        /* Chat Header */
+        .chat-header {
+            background: #075E54;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .chat-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .chat-info h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .chat-info p {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Chat Messages */
+        .chat-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.from-usa {
+            display: flex;
+            gap: 10px;
+        }
+
+        .message.from-usa .bubble {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 8px;
+            max-width: 80%;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .message.from-you {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .message.from-you .bubble {
+            background: #DCF8C6;
+            padding: 12px 16px;
+            border-radius: 8px 0 8px 8px;
+            max-width: 80%;
+        }
+
+        .bubble p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .bubble p:last-child {
+            margin-bottom: 0;
+        }
+
+        .bubble strong {
+            color: #075E54;
+        }
+
+        .timestamp {
+            font-size: 0.7rem;
+            color: #667781;
+            margin-top: 3px;
+        }
+
+        /* Quick Reply Buttons */
+        .quick-replies {
+            background: white;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .quick-replies p {
+            font-size: 0.9rem;
+            color: #667781;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .reply-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .reply-btn {
+            background: #075E54;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .reply-btn.large {
+            grid-column: 1 / -1;
+            background: #25D366;
+        }
+
+        /* Option Cards in Chat */
+        .option-card {
+            background: #F0F0F0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 4px solid #075E54;
+        }
+
+        .option-card h4 {
+            font-size: 1rem;
+            color: #075E54;
+            margin-bottom: 5px;
+        }
+
+        .option-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .option-card button {
+            background: #075E54;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        @media (min-width: 700px) {
+            body {
+                background: #D9DBD5;
+            }
+
+            .chat-container {
+                background: #E5DDD5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-header">
+        <div class="chat-avatar">🤝</div>
+        <div class="chat-info">
+            <h1>United Society Affiliates</h1>
+            <p>Here to help • Syracuse, NY</p>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="message from-usa">
+            <div class="bubble">
+                <p><strong>Hey! 👋</strong></p>
+                <p>We're United Society Affiliates - connecting people in Syracuse to real opportunities.</p>
+                <p>We help with jobs, food, housing, education, legal support, and more.</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-usa">
+            <div class="bubble">
+                <p><strong>No judgment. No runaround. Just real help.</strong></p>
+                <p>Whether you need help today or you're planning for tomorrow, we got you.</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-you">
+            <div class="bubble">
+                <p>What kind of help do you offer?</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-usa">
+            <div class="bubble">
+                <p>Good question! Here's what we can help with right now:</p>
+                
+                <div class="option-card">
+                    <h4>💼 Job & Career</h4>
+                    <p>Resume help, interview prep, job leads, training programs</p>
+                    <button>See Jobs Available</button>
+                </div>
+
+                <div class="option-card">
+                    <h4>🍎 Food Resources</h4>
+                    <p>Food banks, meal programs, SNAP assistance</p>
+                    <button>Find Food Now</button>
+                </div>
+
+                <div class="option-card">
+                    <h4>🏠 Housing Support</h4>
+                    <p>Emergency shelter, rent help, housing programs</p>
+                    <button>Get Housing Help</button>
+                </div>
+
+                <div class="option-card">
+                    <h4>📚 Education</h4>
+                    <p>GED classes, tutoring, college info, skills training</p>
+                    <button>Start Learning</button>
+                </div>
+
+                <div class="option-card">
+                    <h4>⚖️ Legal Support</h4>
+                    <p>Know your rights, legal aid, record assistance</p>
+                    <button>Legal Resources</button>
+                </div>
+
+                <div class="option-card">
+                    <h4>👥 Mentorship</h4>
+                    <p>Connect with someone who's been where you are</p>
+                    <button>Find a Mentor</button>
+                </div>
+
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-you">
+            <div class="bubble">
+                <p>Who runs this?</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-usa">
+            <div class="bubble">
+                <p><strong>Clifford Ryan Jr. founded United Society Affiliates.</strong></p>
+                <p>Real talk: Clifford has been through it. He knows what it's like when the system isn't built for you. Been locked up, struggled, had doors closed in his face.</p>
+                <p>That's exactly WHY he started this. He's not some suit trying to "save" people. He's from the community, for the community.</p>
+                <p>For the last 10 years, he's been building United Society Affiliates into a real resource - connecting people to opportunities, helping navigate the system, advocating for change.</p>
+                <p><strong>Because everyone deserves a real shot.</strong></p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-you">
+            <div class="bubble">
+                <p>How much does this cost?</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-usa">
+            <div class="bubble">
+                <p><strong>FREE. 💯</strong></p>
+                <p>All our services are free. No fees, no hidden costs, no strings attached.</p>
+                <p>We're a nonprofit. Our mission is to help - that's it.</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-you">
+            <div class="bubble">
+                <p>Has this actually helped people?</p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-usa">
+            <div class="bubble">
+                <p><strong>Real stories from real people:</strong></p>
+                <p style="font-style: italic; padding: 10px; background: rgba(7, 94, 84, 0.1); border-radius: 5px; margin-top: 10px;">"I was sleeping in my car. United Society Affiliates connected me with emergency housing and helped me get my CDL. Now I'm driving trucks making good money."<br><strong>- Marcus</strong></p>
+                <p style="font-style: italic; padding: 10px; background: rgba(7, 94, 84, 0.1); border-radius: 5px; margin-top: 10px;">"After getting out, I had no idea where to start. They helped me get my record expunged and found me job training. Now I run my own business."<br><strong>- Jason</strong></p>
+                <p style="font-style: italic; padding: 10px; background: rgba(7, 94, 84, 0.1); border-radius: 5px; margin-top: 10px;">"My kids were going hungry. United Society Affiliates connected me to food programs and got me into job training. Now my family is stable."<br><strong>- Shanice</strong></p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+
+        <div class="message from-usa">
+            <div class="bubble">
+                <p><strong>Ready to get started?</strong></p>
+                <p>You can call, text, email, or just come see us. Whatever works for you.</p>
+                <p>📞 Call: (315) XXX-XXXX<br>💬 Text: (315) XXX-XXXX<br>📧 Email: info@unitedsocietyaffiliates.org<br>📍 Syracuse, NY</p>
+                <p><strong>We're here Monday-Friday, 9am-6pm. Walk-ins welcome.</strong></p>
+                <div class="timestamp">Just now</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-replies">
+        <p>What would help you most right now?</p>
+        <div class="reply-buttons">
+            <button class="reply-btn">💼 Find Work</button>
+            <button class="reply-btn">🍎 Get Food</button>
+            <button class="reply-btn">🏠 Housing Help</button>
+            <button class="reply-btn">📚 Education</button>
+            <button class="reply-btn large">📞 Talk to Someone Now</button>
+        </div>
+    </div>
+</body>
+</html>
