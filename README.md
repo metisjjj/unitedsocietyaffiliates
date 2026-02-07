@@ -177,5 +177,5 @@ This website is created for United Society Affiliates. All content and branding 
 ---
 
 **Version**: 1.0  
-**Last Updated**: February 2024  
+**Last Updated**: February 2026  
 **Built for**: United Society Affiliates, Syracuse, NY
