@@ -1,8 +1,9 @@
 /* CSS Variables for Easy Customization */
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --secondary-color: #059669;
+    --primary-color: #c9a227;
+    --primary-dark: #9a7a1a;
+    --secondary-color: #c9a227;
+    --navy: #0d1b2a;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #f9fafb;
@@ -86,9 +87,15 @@ a {
 }
 
 .logo a {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-menu {
@@ -185,7 +192,7 @@ a {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
     color: white;
     padding: 150px 0 100px;
     margin-top: 70px;
@@ -351,42 +358,61 @@ a {
     font-style: italic;
 }
 
-.founder-social-links {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+/* Connect with Clifford Banner */
+.connect-banner {
+    background: var(--navy);
+    padding: 2rem 0;
+}
+
+.connect-banner-heading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     margin-bottom: 1.25rem;
+    opacity: 0.7;
 }
 
-.social-link {
-    display: inline-flex;
-    align-items: center;
+.connect-banner-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
+}
+
+.connect-banner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
     text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    min-width: 80px;
+    font-size: 0.75rem;
     font-weight: 500;
-    font-size: 0.9375rem;
-    transition: opacity 0.2s ease;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.social-link:hover {
-    opacity: 0.75;
+.connect-banner-item:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
 }
 
-.linkedin-link {
-    color: #0a66c2;
-}
+.connect-banner-item.linkedin-link:hover  { color: #70b5f9; }
+.connect-banner-item.youtube-link:hover   { color: #ff6b6b; }
+.connect-banner-item.tiktok-link:hover    { color: #ee1d52; }
+.connect-banner-item.facebook-link:hover  { color: #74a7fb; }
 
-.youtube-link {
-    color: #ff0000;
-}
-
-.tiktok-link {
-    color: #010101;
-}
-
-.social-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+.connect-banner-icon {
+    width: 1.75rem;
+    height: 1.75rem;
     flex-shrink: 0;
 }
 
@@ -561,7 +587,7 @@ a {
 }
 
 .involved-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
     color: white;
     padding: 3rem 2rem;
     border-radius: 1rem;
@@ -721,7 +747,7 @@ a {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
 }
 
 .form-group textarea {
@@ -796,7 +822,7 @@ a {
 
 /* Project Hero */
 .project-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
     color: white;
     padding: 120px 0 60px;
     margin-top: 70px;
@@ -1167,7 +1193,7 @@ a {
 
 /* Project CTA */
 .project-cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
     color: white;
     padding: 80px 0;
     text-align: center;

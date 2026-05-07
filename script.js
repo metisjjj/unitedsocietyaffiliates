@@ -107,49 +107,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
-        
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
-        alert('Thank you for your message! We will get back to you soon.');
-        
-        // Reset form
-        contactForm.reset();
-        
-        // In a real implementation, you would do something like:
-        /*
-        fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        })
-        .catch(error => {
-            alert('There was an error sending your message. Please try again.');
-            console.error('Error:', error);
-        });
-        */
-    });
-}
+// Contact Form — submitted natively to Formspree via method="POST" on the form element
 
 // Intersection Observer for Fade-in Animations
 const observerOptions = {
