@@ -351,6 +351,45 @@ a {
     font-style: italic;
 }
 
+.founder-social-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: opacity 0.2s ease;
+}
+
+.social-link:hover {
+    opacity: 0.75;
+}
+
+.linkedin-link {
+    color: #0a66c2;
+}
+
+.youtube-link {
+    color: #ff0000;
+}
+
+.tiktok-link {
+    color: #010101;
+}
+
+.social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
 /* Problem Section */
 .problem-section {
     padding: 80px 0;
