@@ -686,6 +686,10 @@ a {
     margin: 0 auto;
 }
 
+.contact-form-only {
+    grid-template-columns: auto 1fr;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
