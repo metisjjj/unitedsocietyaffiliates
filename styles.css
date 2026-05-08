@@ -196,12 +196,29 @@ a {
     color: white;
     padding: 150px 0 100px;
     margin-top: 70px;
-    text-align: center;
+    text-align: left;
 }
 
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+.hero-split {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-split-logo {
+    flex: 0 0 auto;
+}
+
+.hero-split-logo img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 16px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-split-text {
+    flex: 1;
 }
 
 .hero h1 {
@@ -220,8 +237,25 @@ a {
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+    .hero-split {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .hero-split-logo img {
+        width: 180px;
+        height: 180px;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
 }
 
 /* Buttons */
