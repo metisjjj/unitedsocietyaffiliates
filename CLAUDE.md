@@ -8,7 +8,7 @@ Static website for **United Society Affiliates**, a Syracuse-based nonprofit tha
 
 ## Deployment
 
-Hosted on **GitHub Pages** at https://metisjjj.github.io/unitedsocietyaffiliates/. Changes pushed to the `main` branch are deployed automatically.
+Hosted on **GitHub Pages** at https://unitedsocietyaffiliates.org. Changes pushed to the `main` branch are deployed automatically.
 
 ## Running Locally
 

@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(Get-ChildItem -Force)",
-      "Bash(Select-Object Name, PSIsContainer)"
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(cp \"C:\\\\Users\\\\Jim\\\\Downloads\\\\big-cuzin\\\\big-cuzin-overview.PNG\" \"C:\\\\Users\\\\Jim\\\\Documents\\\\Personal\\\\United Society Affiliates\\\\site\\\\unitedsocietyaffiliates\\\\images\\\\big-cuzin-overview.PNG\")",
+      "Bash(cp \"C:\\\\Users\\\\Jim\\\\Downloads\\\\big-cuzin\\\\big-cuzin-formidable-workshop.PNG\" \"C:\\\\Users\\\\Jim\\\\Documents\\\\Personal\\\\United Society Affiliates\\\\site\\\\unitedsocietyaffiliates\\\\images\\\\big-cuzin-formidable-workshop.PNG\")",
+      "Bash(cp \"C:\\\\Users\\\\Jim\\\\Downloads\\\\big-cuzin\\\\big-cuzin-outcomes-and-sustainability-plan.PNG\" \"C:\\\\Users\\\\Jim\\\\Documents\\\\Personal\\\\United Society Affiliates\\\\site\\\\unitedsocietyaffiliates\\\\images\\\\big-cuzin-outcomes-and-sustainability-plan.PNG\")",
+      "Bash(cp \"C:\\\\Users\\\\Jim\\\\Downloads\\\\big-cuzin\\\\big-cuzin-sponsorship-summary.PNG\" \"C:\\\\Users\\\\Jim\\\\Documents\\\\Personal\\\\United Society Affiliates\\\\site\\\\unitedsocietyaffiliates\\\\images\\\\big-cuzin-sponsorship-summary.PNG\")"
     ]
   }
 }
