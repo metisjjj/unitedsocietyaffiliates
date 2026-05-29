@@ -197,6 +197,40 @@ a {
     padding: 150px 0 100px;
     margin-top: 70px;
     text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-partners-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-partner-logo {
+    position: absolute;
+    filter: grayscale(100%) brightness(10);
+    mix-blend-mode: screen;
+    animation: floatLogo linear infinite alternate;
+    border-radius: 8px;
+}
+
+.hero-partner-logo-bg {
+    filter: none;
+    mix-blend-mode: normal;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+@keyframes floatLogo {
+    0%   { transform: translate(0px,   0px) rotate(-1deg); }
+    20%  { transform: translate(30px, -25px) rotate(2deg); }
+    40%  { transform: translate(-20px, -40px) rotate(-2deg); }
+    60%  { transform: translate(25px, -18px) rotate(1.5deg); }
+    80%  { transform: translate(-15px, -32px) rotate(3deg); }
+    100% { transform: translate(0px,   0px) rotate(-1deg); }
 }
 
 .hero-split {
