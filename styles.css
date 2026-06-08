@@ -2042,6 +2042,54 @@ a {
     margin: 0;
 }
 
+/* Enrollment Packet */
+.bc-enroll-section {
+    padding: 3rem 0;
+    background: var(--light-gray);
+}
+
+.bc-enroll-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.bc-enroll-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.bc-enroll-text {
+    flex: 1;
+}
+
+.bc-enroll-text h2 {
+    margin-bottom: 0.5rem;
+    color: var(--navy);
+}
+
+.bc-enroll-text p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.bc-enroll-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .bc-enroll-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* CTA */
 .bc-cta {
     background: linear-gradient(135deg, var(--navy) 0%, #1a3050 100%) !important;
