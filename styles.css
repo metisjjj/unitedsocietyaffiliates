@@ -1867,6 +1867,74 @@ a {
     top: 90px;
 }
 
+/* Workforce Development */
+.bc-workforce-section {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.bc-workforce-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.bc-workforce-image {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 90px;
+}
+
+.bc-workforce-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bc-workforce-text h3 {
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Alumni Network */
+.bc-alumni-section {
+    padding: 80px 0;
+    background: var(--bg-white);
+}
+
+.bc-alumni-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.bc-alumni-image {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 90px;
+}
+
+.bc-alumni-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bc-alumni-text h3 {
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
 /* Sustainability */
 .bc-sustainability-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -2106,14 +2174,18 @@ a {
 @media (max-width: 968px) {
     .bc-overview-grid,
     .bc-formidable-grid,
-    .bc-outcomes-grid {
+    .bc-outcomes-grid,
+    .bc-workforce-grid,
+    .bc-alumni-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
     }
 
     .bc-overview-image,
     .bc-formidable-image,
-    .bc-outcomes-image {
+    .bc-outcomes-image,
+    .bc-workforce-image,
+    .bc-alumni-image {
         order: -1;
         position: static;
     }
