@@ -2110,6 +2110,50 @@ a {
     margin: 0;
 }
 
+/* Become a Mentor */
+.bc-mentor-section {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.bc-mentor-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bc-mentor-intro {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+}
+
+.bc-mentor-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.bc-mentor-commitment-heading {
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.bc-mentor-commitment-list {
+    max-width: 760px;
+}
+
+.bc-mentor-apply {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .bc-mentor-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Enrollment Packet */
 .bc-enroll-section {
     padding: 3rem 0;
