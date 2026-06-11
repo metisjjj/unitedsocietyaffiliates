@@ -7,6 +7,7 @@
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #f9fafb;
+    --bg-section-alt: #d6dce4;
     --bg-white: #ffffff;
     --border-color: #e5e7eb;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -1320,17 +1321,9 @@ a {
     opacity: 0.9;
 }
 
-/* Program Overview */
+/* Program Overview — background/heading set per-page below */
 .program-overview {
     padding: 80px 0;
-    background: var(--bg-white);
-}
-
-.program-overview h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-dark);
 }
 
 .overview-text {
@@ -1571,16 +1564,9 @@ a {
     margin: 0;
 }
 
-/* Why Matters Section */
+/* Why Matters Section — background/heading set per-page below */
 .why-matters-section {
     padding: 80px 0;
-    background: var(--bg-white);
-}
-
-.why-matters-section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
 }
 
 .why-matters-grid {
@@ -1593,7 +1579,7 @@ a {
     padding: 2rem;
     background: var(--bg-light);
     border-radius: 1rem;
-    border-left: 4px solid #8B4513;
+    border-left: 4px solid var(--border-color);
 }
 
 .why-matter-item h3 {
@@ -1665,7 +1651,146 @@ a {
    BIG CUZIN' PROGRAM PAGE STYLES
    ======================================== */
 
-/* Hero */
+/*
+  Alternating section backgrounds (in page order):
+    1  Hero              — navy gradient    (dark)
+    2  About             — #fff             (light-1)
+    3  Pillars           — var(--bg-light)  (light-2)
+    4  FORMIDABLE        — navy             (dark)
+    5  Four Levels       — #fff             (light-1)
+    6  Outcomes          — var(--bg-light)  (light-2)
+    7  Sustainability     — #fff             (light-1)
+    8  Sponsorship       — var(--bg-light)  (light-2)
+    9  Workforce         — #fff             (light-1)
+   10  Alumni            — var(--bg-light)  (light-2)
+   11  Become a Mentor   — #fff             (light-1)
+   12  Enroll            — var(--bg-light)  (light-2)
+   13  CTA               — navy gradient    (dark)
+*/
+
+/* --- Shared BC section defaults --- */
+.bc-section {
+    padding: 80px 0;
+}
+
+/* Section heading — used for all BC h2s */
+.bc-section-heading {
+    font-size: 2.25rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+/* Subsection heading — h3 dividers within a section */
+.bc-subsection-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Label chip above headings */
+.bc-label {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.9rem;
+    border-radius: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Tagline below heading */
+.bc-tagline-sub {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+/* Document/graphic download links */
+.bc-doc-link-wrap {
+    text-align: center;
+    margin-top: 1.75rem;
+}
+
+.bc-doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--navy);
+    text-decoration: none;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.55rem 1.25rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+.bc-doc-link:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+/* Outcome/detail list — left-border style */
+.bc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bc-list li {
+    padding: 0.55rem 1rem 0.55rem 1.25rem;
+    border-left: 3px solid var(--primary-color);
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--bg-light);
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+/* Focus/feature grid — light background version */
+.bc-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+.bc-feature-item {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    text-align: center;
+}
+.bc-feature-item .bc-feature-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+.bc-feature-item h4 {
+    font-size: 0.9rem;
+    color: var(--navy);
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+}
+.bc-feature-item p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Hero --- */
 .bc-hero {
     background: linear-gradient(135deg, var(--navy) 0%, #1a3050 100%);
     color: white;
@@ -1724,62 +1849,37 @@ a {
     margin-top: 0.5rem;
 }
 
-/* Overview */
-.bc-overview-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+/* --- About / Overview (light-1: #fff) --- */
+.program-overview {
+    padding: 80px 0;
+    background: #fff;
+}
+.program-overview h2 {
+    font-size: 2.25rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+.program-overview .lead-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+.program-overview p {
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
 }
 
-.bc-overview-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.bc-overview-image {
-    display: flex;
-    justify-content: center;
-}
-
-.bc-program-img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-xl);
-}
-
-/* Pillars */
+/* --- Pillars (alt) --- */
 .bc-pillars-section {
-    background: var(--bg-light);
+    background: var(--bg-section-alt);
 }
-
 .bc-pillar-card {
-    border-top: 4px solid var(--primary-color) !important;
+    border-top: 4px solid var(--primary-color);
 }
 
-/* Document/graphic download links */
-.bc-doc-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin-top: 1.25rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--primary-color);
-    text-decoration: none;
-    border: 1px solid var(--primary-color);
-    padding: 0.4rem 0.9rem;
-    border-radius: 4px;
-    transition: var(--transition);
-}
-
-.bc-doc-link:hover {
-    background: var(--primary-color);
-    color: #fff;
-}
-
-/* Four Levels of Leadership Development */
+/* --- Four Levels of Leadership (light-1: #fff) --- */
 .bc-levels-section {
     background: #fff;
 }
@@ -1790,16 +1890,14 @@ a {
     gap: 1.5rem;
     margin-top: 2rem;
 }
-
 .bc-level-card {
-    text-align: left !important;
-    padding: 1.75rem 1.5rem !important;
+    text-align: left;
+    padding: 1.75rem 1.5rem;
 }
-
 .bc-level-badge {
     display: inline-block;
     background: var(--primary-color);
-    color: #fff;
+    color: var(--navy);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -1808,412 +1906,263 @@ a {
     border-radius: 20px;
     margin-bottom: 0.75rem;
 }
-
 .bc-level-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+    color: var(--navy);
     margin-bottom: 0.25rem;
 }
-
 .bc-level-subtitle {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--text-light);
     font-style: italic;
     margin-bottom: 1rem;
 }
-
 .bc-level-card h4 {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
-
 .bc-level-list {
     list-style: none;
     padding: 0;
     margin: 0 0 1rem 0;
 }
-
 .bc-level-list li {
     font-size: 0.875rem;
     padding: 0.2rem 0 0.2rem 1rem;
     position: relative;
-    color: #222;
+    color: var(--text-dark);
 }
-
 .bc-level-list li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: var(--primary-color);
 }
-
 .bc-level-outcome {
     font-size: 0.825rem;
-    color: #555;
+    color: var(--text-light);
     font-style: italic;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-color);
     padding-top: 0.75rem;
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
-
 .bc-levels-pathway {
     margin-top: 2rem;
     text-align: center;
     font-size: 0.95rem;
+    color: var(--text-dark);
     background: var(--bg-light);
+    border: 1px solid var(--border-color);
     padding: 1rem 1.5rem;
     border-radius: 8px;
 }
 
-/* FORMIDABLE Workshop */
+/* --- FORMIDABLE Workshop (dark: navy) --- */
 .bc-formidable-section {
     padding: 80px 0;
     background: var(--navy);
     color: white;
 }
-
-.bc-formidable-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.bc-formidable-label {
-    display: inline-block;
-    background: var(--primary-color);
-    color: var(--navy);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.3rem 0.9rem;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-}
-
-.bc-formidable-text h2 {
-    font-size: 2.5rem;
+.bc-formidable-section h2 {
+    font-size: 2.25rem;
     color: white;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
-
-.bc-formidable-tagline {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-}
-
-.bc-formidable-text p {
-    color: rgba(255, 255, 255, 0.85);
+.bc-formidable-section p {
+    color: rgba(255,255,255,0.85);
     line-height: 1.8;
     margin-bottom: 1.25rem;
 }
-
 .bc-build-quote {
     font-style: italic;
     font-size: 1.05rem;
     border-left: 3px solid var(--primary-color);
     padding-left: 1rem;
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255,255,255,0.9);
 }
 
+/* Feature grid — dark background variant (FORMIDABLE) */
 .bc-focus-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
-
 .bc-focus-item {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(201, 162, 39, 0.3);
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(201,162,39,0.3);
     border-radius: 0.75rem;
     padding: 1.25rem;
     text-align: center;
 }
-
 .bc-focus-icon {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
-
 .bc-focus-item h4 {
     font-size: 0.9rem;
     color: var(--primary-color);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.35rem;
+    font-weight: 700;
 }
-
 .bc-focus-item p {
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255,255,255,0.7);
     line-height: 1.5;
-    margin: 0 !important;
+    margin: 0;
 }
 
-.bc-formidable-image {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+/* Feature grid — light background variant (all other sections) */
+.bc-focus-grid.bc-focus-light .bc-focus-item {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+}
+.bc-focus-grid.bc-focus-light .bc-focus-item h4 {
+    color: var(--navy);
+}
+.bc-focus-grid.bc-focus-light .bc-focus-item p {
+    color: var(--text-light);
 }
 
-/* Outcomes */
+/* --- Outcomes (alt) --- */
 .bc-outcomes-section {
     padding: 80px 0;
-    background: var(--bg-white);
+    background: var(--bg-section-alt);
 }
-
-.bc-outcomes-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+.bc-outcomes-section h2 {
+    font-size: 2.25rem;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
 }
-
-.bc-outcomes-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.bc-outcomes-text h3 {
-    font-size: 1.25rem;
+.bc-outcomes-section h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
     color: var(--navy);
     margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
     border-bottom: 2px solid var(--primary-color);
 }
 
+/* Shared outcome list — used in outcomes, workforce, alumni, mentor */
 .bc-outcomes-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .bc-outcomes-list li {
-    padding: 0.6rem 0 0.6rem 1.25rem;
+    padding: 0.55rem 1rem 0.55rem 1.25rem;
     border-left: 3px solid var(--primary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
     line-height: 1.6;
     color: var(--text-dark);
-    background: var(--bg-light);
-    border-radius: 0 0.5rem 0.5rem 0;
-    padding-right: 1rem;
-}
-
-.bc-outcomes-image {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 90px;
-}
-
-/* Workforce Development */
-.bc-workforce-section {
-    padding: 80px 0;
-    background: var(--bg-light);
-}
-
-.bc-workforce-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.bc-workforce-image {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 90px;
-}
-
-.bc-workforce-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.bc-workforce-text h3 {
-    font-size: 1.25rem;
-    color: var(--navy);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--primary-color);
-}
-
-/* Alumni Network */
-.bc-alumni-section {
-    padding: 80px 0;
     background: var(--bg-white);
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-size: 0.95rem;
+    box-shadow: var(--shadow-sm);
 }
 
-.bc-alumni-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+/* --- Sustainability (light-1: #fff) --- */
+.why-matters-section {
+    padding: 80px 0;
+    background: #fff;
 }
-
-.bc-alumni-image {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 90px;
-}
-
-.bc-alumni-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.bc-alumni-text h3 {
-    font-size: 1.25rem;
+.why-matters-section h2 {
+    font-size: 2.25rem;
+    text-align: center;
     color: var(--navy);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 3rem;
 }
-
-/* Sustainability */
 .bc-sustainability-grid {
     grid-template-columns: repeat(3, 1fr);
 }
-
 .bc-sustain-item {
-    border-left: 4px solid var(--primary-color) !important;
+    border-left: 4px solid var(--primary-color);
+}
+.why-matter-item {
+    padding: 1.75rem;
+    background: var(--bg-light);
+    border-radius: 1rem;
+    border-left: 4px solid var(--border-color);
+}
+.why-matter-item h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+.why-matter-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
-/* Sponsorship */
+/* --- Sponsorship (alt) --- */
 .bc-sponsorship-section {
     padding: 80px 0;
-    background: var(--bg-light);
+    background: var(--bg-section-alt);
 }
-
 .bc-sponsorship-header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 3rem;
 }
-
 .bc-sponsorship-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
 }
-
 .bc-sponsorship-header p {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     color: var(--text-light);
     line-height: 1.7;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
-
-.bc-sponsorship-overview-img {
-    width: 100%;
-    max-width: 680px;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-xl);
-    margin: 0 auto;
-    display: block;
-}
-
 .bc-sponsorship-tiers {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2.5rem;
 }
-
 .bc-tier-card {
-    background: var(--bg-white);
+    background: #fff;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: var(--shadow-md);
     border-top: 4px solid var(--primary-color);
     position: relative;
 }
-
-.bc-tier-legacy {
-    border-top-color: var(--navy);
-    background: var(--navy);
-    color: white;
-}
-
-.bc-tier-legacy .bc-tier-level {
-    color: var(--primary-color);
-}
-
-.bc-tier-legacy .bc-tier-amount {
-    color: white;
-}
-
-.bc-tier-legacy ul li,
-.bc-tier-legacy .bc-tier-supports {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.bc-tier-legacy .bc-tier-supports strong {
-    color: var(--primary-color);
-}
-
-.bc-tier-featured {
-    border-top-color: var(--navy);
-    box-shadow: var(--shadow-xl);
-    transform: translateY(-4px);
-}
-
-.bc-tier-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--navy);
-    color: white;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    padding: 0.25rem 0.9rem;
-    border-radius: 1rem;
-    white-space: nowrap;
-}
-
 .bc-tier-level {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-light);
     margin-bottom: 0.4rem;
 }
-
 .bc-tier-amount {
     font-size: 2.25rem;
     font-weight: 700;
     color: var(--navy);
     margin-bottom: 1.25rem;
 }
-
 .bc-tier-card ul {
     list-style: none;
     padding: 0;
     margin: 0 0 1.25rem;
 }
-
 .bc-tier-card ul li {
-    padding: 0.35rem 0;
+    padding: 0.35rem 0 0.35rem 1.25rem;
     color: var(--text-dark);
     font-size: 0.9rem;
     border-bottom: 1px solid var(--border-color);
-    padding-left: 1.25rem;
     position: relative;
 }
-
 .bc-tier-card ul li::before {
     content: "✓";
     position: absolute;
@@ -2221,7 +2170,6 @@ a {
     color: var(--primary-color);
     font-weight: 700;
 }
-
 .bc-tier-supports {
     font-size: 0.85rem;
     color: var(--text-light);
@@ -2229,13 +2177,11 @@ a {
     padding-top: 0.75rem;
     border-top: 1px solid var(--border-color);
 }
-
 .bc-tier-supports strong {
     color: var(--navy);
 }
-
 .bc-inkind {
-    background: var(--bg-white);
+    background: #fff;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: var(--shadow-sm);
@@ -2243,161 +2189,186 @@ a {
     max-width: 700px;
     margin: 0 auto;
 }
-
 .bc-inkind h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
     color: var(--navy);
 }
-
 .bc-inkind p {
     color: var(--text-light);
     line-height: 1.7;
     margin: 0;
 }
 
-/* Become a Mentor */
-.bc-mentor-section {
+/* --- Workforce (light-1: #fff) --- */
+.bc-workforce-section {
     padding: 80px 0;
-    background: var(--light-gray);
+    background: #fff;
 }
-
-.bc-mentor-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.bc-mentor-intro {
-    max-width: 760px;
-    margin-bottom: 2.5rem;
-}
-
-.bc-mentor-grid-4 {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.bc-mentor-commitment-heading {
-    font-size: 1.25rem;
+.bc-workforce-section h2 {
+    font-size: 2.25rem;
     color: var(--navy);
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.bc-workforce-section h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
     border-bottom: 2px solid var(--primary-color);
 }
 
+/* --- Alumni Network (alt) --- */
+.bc-alumni-section {
+    padding: 80px 0;
+    background: var(--bg-section-alt);
+}
+.bc-alumni-section h2 {
+    font-size: 2.25rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+.bc-alumni-section h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Become a Mentor (light-1: #fff) --- */
+.bc-mentor-section {
+    padding: 80px 0;
+    background: #fff;
+}
+.bc-mentor-section h2 {
+    font-size: 2.25rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+.bc-mentor-intro {
+    max-width: 760px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+.bc-mentor-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.bc-mentor-commitment-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--primary-color);
+}
 .bc-mentor-commitment-list {
     max-width: 760px;
 }
-
 .bc-mentor-apply {
     margin-top: 2.5rem;
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .bc-mentor-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Enrollment Packet */
+/* --- Enrollment Packet (alt) --- */
 .bc-enroll-section {
-    padding: 3rem 0;
-    background: var(--light-gray);
+    padding: 60px 0;
+    background: var(--bg-section-alt);
 }
-
 .bc-enroll-card {
     display: flex;
     align-items: center;
     gap: 2rem;
     background: #fff;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--primary-color);
     border-radius: 12px;
     padding: 2.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-md);
 }
-
 .bc-enroll-icon {
     font-size: 3rem;
     flex-shrink: 0;
 }
-
 .bc-enroll-text {
     flex: 1;
 }
-
 .bc-enroll-text h2 {
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--navy);
 }
-
 .bc-enroll-text p {
     margin: 0;
-    color: var(--text-secondary);
+    color: var(--text-light);
+    line-height: 1.7;
 }
-
 .bc-enroll-btn {
     flex-shrink: 0;
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-    .bc-enroll-card {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* CTA */
+/* --- CTA (dark: navy gradient) --- */
 .bc-cta {
-    background: linear-gradient(135deg, var(--navy) 0%, #1a3050 100%) !important;
+    background: linear-gradient(135deg, var(--navy) 0%, #1a3050 100%);
 }
-
 .bc-memorial-footer {
-    margin-top: 2rem !important;
-    font-size: 0.95rem !important;
-    opacity: 0.75 !important;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    opacity: 0.75;
     font-style: italic;
 }
 
-/* Responsive */
+/* --- Shared label chip (replaces .bc-formidable-label across sections) --- */
+.bc-formidable-label {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.9rem;
+    border-radius: 2rem;
+    margin-bottom: 0.75rem;
+}
+/* Light label variant for dark sections */
+.bc-formidable-section .bc-formidable-label {
+    color: var(--navy);
+}
+
+/* Tagline line below heading */
+.bc-formidable-tagline {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+/* --- Responsive --- */
 @media (max-width: 968px) {
-    .bc-overview-grid,
-    .bc-formidable-grid,
-    .bc-outcomes-grid,
-    .bc-workforce-grid,
-    .bc-alumni-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    .bc-overview-image,
-    .bc-formidable-image,
-    .bc-outcomes-image,
-    .bc-workforce-image,
-    .bc-alumni-image {
-        order: -1;
-        position: static;
-    }
-
-    .bc-focus-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .bc-sustainability-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .bc-levels-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .bc-focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bc-sustainability-grid {
+        grid-template-columns: 1fr 1fr;
+    }
     .bc-hero h1 {
         font-size: 2.25rem;
     }
-
     .bc-hero-poster img {
         width: 200px;
+    }
+    .bc-mentor-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -2405,28 +2376,27 @@ a {
     .bc-hero .container {
         grid-template-columns: 1fr;
     }
-
     .bc-hero-poster {
         display: flex;
         justify-content: center;
         order: -1;
     }
-
     .bc-hero-poster img {
         width: 200px;
         transform: none;
     }
-
+    .bc-levels-grid {
+        grid-template-columns: 1fr;
+    }
     .bc-focus-grid {
         grid-template-columns: 1fr 1fr;
     }
-
     .bc-sustainability-grid {
         grid-template-columns: 1fr;
     }
-
-    .bc-levels-grid {
-        grid-template-columns: 1fr;
+    .bc-enroll-card {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
