@@ -1673,6 +1673,34 @@ a {
     margin-top: 70px;
 }
 
+.bc-hero .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+}
+
+.bc-hero-text {
+    min-width: 0;
+}
+
+.bc-hero-poster {
+    flex-shrink: 0;
+}
+
+.bc-hero-poster img {
+    display: block;
+    width: 260px;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    transform: rotate(1.5deg);
+    transition: transform 0.3s ease;
+}
+
+.bc-hero-poster img:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
 .bc-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -1728,6 +1756,27 @@ a {
 
 .bc-pillar-card {
     border-top: 4px solid var(--primary-color) !important;
+}
+
+/* Document/graphic download links */
+.bc-doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.bc-doc-link:hover {
+    background: var(--primary-color);
+    color: #fff;
 }
 
 /* Four Levels of Leadership Development */
@@ -2346,9 +2395,28 @@ a {
     .bc-hero h1 {
         font-size: 2.25rem;
     }
+
+    .bc-hero-poster img {
+        width: 200px;
+    }
 }
 
 @media (max-width: 640px) {
+    .bc-hero .container {
+        grid-template-columns: 1fr;
+    }
+
+    .bc-hero-poster {
+        display: flex;
+        justify-content: center;
+        order: -1;
+    }
+
+    .bc-hero-poster img {
+        width: 200px;
+        transform: none;
+    }
+
     .bc-focus-grid {
         grid-template-columns: 1fr 1fr;
     }
