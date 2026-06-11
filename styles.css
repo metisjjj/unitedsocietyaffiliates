@@ -140,6 +140,7 @@ a {
 
 .dropdown-toggle {
     cursor: pointer;
+    padding-bottom: 0.75rem;
 }
 
 .dropdown-menu {
@@ -154,10 +155,6 @@ a {
     min-width: 200px;
     margin-top: 0;
     list-style: none;
-}
-
-.dropdown {
-    padding-bottom: 0.5rem;
 }
 
 .dropdown:hover .dropdown-menu {
