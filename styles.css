@@ -1818,12 +1818,6 @@ a {
     width: 260px;
     border-radius: 0.75rem;
     box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-    transform: rotate(1.5deg);
-    transition: transform 0.3s ease;
-}
-
-.bc-hero-poster img:hover {
-    transform: rotate(0deg) scale(1.02);
 }
 
 .bc-hero h1 {
@@ -2383,7 +2377,6 @@ a {
     }
     .bc-hero-poster img {
         width: 200px;
-        transform: none;
     }
     .bc-levels-grid {
         grid-template-columns: 1fr;
