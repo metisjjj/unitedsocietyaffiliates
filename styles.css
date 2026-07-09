@@ -1399,6 +1399,158 @@ a {
 }
 
 /* ========================================
+   STATE OF THE STREETS ADDRESS PAGE STYLES
+   ======================================== */
+
+.sotsa-hero {
+    position: relative;
+    margin-top: 70px;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    background: #0d1b2a;
+}
+
+.sotsa-hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.sotsa-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(13, 27, 42, 0.85) 0%, rgba(26, 58, 92, 0.75) 100%);
+    z-index: 1;
+}
+
+.sotsa-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 90px 0 60px;
+}
+
+.sotsa-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sotsa-hero-content .hero-buttons {
+    margin-top: 2rem;
+}
+
+.sotsa-about p {
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+}
+
+.sotsa-about-begin {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-top: 2rem;
+}
+
+.sotsa-episodes-section {
+    background: var(--bg-light, #f7f8fa);
+    padding: 80px 0;
+}
+
+.sotsa-episodes-list {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sotsa-episode {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sotsa-episode a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s ease;
+}
+
+.sotsa-episode a:hover {
+    background: rgba(13, 27, 42, 0.04);
+}
+
+.sotsa-episode-thumb {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #0d1b2a;
+}
+
+.sotsa-episode-text {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.sotsa-episode-title {
+    font-weight: 600;
+}
+
+.sotsa-episode-date {
+    font-size: 0.9rem;
+    opacity: 0.65;
+    white-space: nowrap;
+}
+
+.sotsa-channel-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .sotsa-hero {
+        min-height: 420px;
+    }
+
+    .sotsa-hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    .sotsa-episode a {
+        gap: 0.75rem;
+    }
+
+    .sotsa-episode-thumb {
+        width: 88px;
+        height: 50px;
+    }
+
+    .sotsa-episode-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.15rem;
+    }
+}
+
+/* ========================================
    P.A.L. PROGRAM PAGE STYLES
    ======================================== */
 
