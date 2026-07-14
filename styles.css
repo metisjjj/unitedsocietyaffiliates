@@ -181,6 +181,11 @@ a {
     background-color: var(--bg-light);
 }
 
+.dropdown-menu .dropdown-subitem a {
+    padding-left: 2.75rem;
+    font-size: 0.9rem;
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -3176,6 +3181,10 @@ a {
     
     .dropdown.active .dropdown-menu {
         display: block;
+    }
+
+    .dropdown-menu .dropdown-subitem a {
+        padding-left: 1.5rem;
     }
     
     .hero {
