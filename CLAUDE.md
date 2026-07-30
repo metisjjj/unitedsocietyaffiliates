@@ -46,9 +46,9 @@ All active pages (`index.html`, `neutral-ground.html`, `pal-program.html`, `ches
 - **Neutral Ground**: Converting vacant Syracuse land into community green/wellness spaces
 - **P.A.L. (Publish A Life)**: Community publishing program for underserved voices
 - **Chess Wars**: An original graphic novel series and "Chess Wars Academy" curriculum, both P.A.L. Program originals; overview lives on `pal-program.html`, full content library on `chess-wars.html`
-- **Big Cuzin'**: Youth mentorship program (also USA's general-purpose mascot elsewhere on the site — Chess Wars Academy materials featuring Big Cuzin' are still prefixed `chess-wars-` since Chess Wars is the program context)
-- **State of the Streets Address (SOTSA)**: Clifford Ryan Jr.'s podcast
-- Founder: Clifford Ryan Jr. (`clifford-ryan-jr.png` used on index.html)
+- **Big Cuzin'**: Youth mentorship program (also the organization's general-purpose mascot elsewhere on the site — Chess Wars Academy materials featuring Big Cuzin' are still prefixed `chess-wars-` since Chess Wars is the program context)
+- **State of the Streets Address (SOTSA)**: The organization's podcast
+- Founder image: `clifford-ryan-jr.png`, used on index.html
 
 ## Image Naming Convention
 
@@ -56,7 +56,7 @@ Chess Wars assets use descriptive, sortable filenames (not the UUID names they o
 
 ## Verifying Image Content Before Batch Operations
 
-Cliff (site owner) sends a high volume of AI-generated images (graphic novel pages, program materials, slides) with non-descriptive filenames. Before renaming, captioning, or organizing more than a couple of these images:
+New content for this site (graphic novel pages, program materials, slides) tends to arrive in volume with non-descriptive filenames (e.g. UUIDs). Before renaming, captioning, or organizing more than a couple of these images:
 
 1. **Read each file individually and state what it actually shows** before assigning it a name or caption — do not infer content from a similar filename, a prior batch's pattern, or a single skim across many files.
 2. **Get explicit confirmation per file (or small batch) before executing a rename**, rather than committing a full batch rename and correcting afterward. A wrong guess that becomes 20 wrong filenames is much more expensive to unwind than one caught before the `mv`.
