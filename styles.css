@@ -2407,27 +2407,6 @@ a {
     object-fit: cover;
 }
 
-.cw-academy-materials {
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid rgba(201, 162, 39, 0.2);
-}
-
-.cw-academy-materials h3 {
-    font-size: 1.2rem;
-    color: #c9a227;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.cw-review-note {
-    text-align: center;
-    font-size: 0.85rem;
-    color: rgba(232, 224, 208, 0.45);
-    font-style: italic;
-    margin-top: 1.5rem;
-}
-
 @media (max-width: 768px) {
     .cw-library-nav {
         position: static;
@@ -2815,6 +2794,54 @@ a {
     border-left: 3px solid var(--primary-color);
     padding-left: 1rem;
     color: rgba(255,255,255,0.9);
+}
+
+/* Program Materials (cover thumbnails, dark background variant) */
+.bc-program-materials {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(201, 162, 39, 0.2);
+}
+.bc-program-materials h3 {
+    color: white;
+    margin-bottom: 1.25rem;
+}
+.bc-materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 500px;
+}
+.bc-material-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+.bc-material-item a {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: var(--transition);
+}
+.bc-material-item a:hover {
+    box-shadow: 0 8px 30px rgba(201, 162, 39, 0.3);
+    transform: translateY(-3px);
+}
+.bc-material-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.bc-material-caption {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
 }
 
 /* Feature grid — dark background variant (FORMIDABLE) */
