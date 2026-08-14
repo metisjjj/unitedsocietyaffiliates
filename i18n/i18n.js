@@ -4,10 +4,10 @@
     const STORAGE_KEY = 'usa-lang';
     const RTL_LANGS = ['ar'];
     const LANG_META = {
-        en: { flag: '🇺🇸', code: 'EN' },
-        es: { flag: '🇪🇸', code: 'ES' },
-        vi: { flag: '🇻🇳', code: 'VI' },
-        ar: { flag: '🇸🇦', code: 'AR' },
+        en: { flagClass: 'lang-flag-en', code: 'EN' },
+        es: { flagClass: 'lang-flag-es', code: 'ES' },
+        vi: { flagClass: 'lang-flag-vi', code: 'VI' },
+        ar: { flagClass: 'lang-flag-ar', code: 'AR' },
     };
 
     function getStoredLang() {
@@ -48,7 +48,10 @@
         document.querySelectorAll('.lang-switcher-toggle').forEach((toggle) => {
             const flagEl = toggle.querySelector('.lang-switcher-flag');
             const codeEl = toggle.querySelector('.lang-switcher-code');
-            if (flagEl) flagEl.textContent = meta.flag;
+            if (flagEl) {
+                Object.values(LANG_META).forEach((m) => flagEl.classList.remove(m.flagClass));
+                flagEl.classList.add(meta.flagClass);
+            }
             if (codeEl) codeEl.textContent = meta.code;
         });
     }

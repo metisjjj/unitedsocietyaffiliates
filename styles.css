@@ -163,8 +163,30 @@ a {
 }
 
 .lang-switcher-flag {
-    font-size: 1rem;
-    line-height: 1;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.lang-flag-en {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2Ij4KICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIGZpbGw9IiNCMjIyMzQiLz4KICA8ZyBmaWxsPSIjZmZmIj4KICAgIDxyZWN0IHk9IjEuMjMiIHdpZHRoPSIyNCIgaGVpZ2h0PSIxLjIzIi8+CiAgICA8cmVjdCB5PSIzLjY5IiB3aWR0aD0iMjQiIGhlaWdodD0iMS4yMyIvPgogICAgPHJlY3QgeT0iNi4xNSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjEuMjMiLz4KICAgIDxyZWN0IHk9IjguNjIiIHdpZHRoPSIyNCIgaGVpZ2h0PSIxLjIzIi8+CiAgICA8cmVjdCB5PSIxMS4wOCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjEuMjMiLz4KICAgIDxyZWN0IHk9IjEzLjU0IiB3aWR0aD0iMjQiIGhlaWdodD0iMS4yMyIvPgogIDwvZz4KICA8cmVjdCB3aWR0aD0iMTAuNSIgaGVpZ2h0PSI4LjYyIiBmaWxsPSIjM0MzQjZFIi8+Cjwvc3ZnPgo=");
+}
+
+.lang-flag-es {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2Ij4KICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIGZpbGw9IiNBQTE1MUIiLz4KICA8cmVjdCB5PSI0IiB3aWR0aD0iMjQiIGhlaWdodD0iOCIgZmlsbD0iI0YxQkYwMCIvPgo8L3N2Zz4K");
+}
+
+.lang-flag-vi {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2Ij4KICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIGZpbGw9IiNEQTI1MUQiLz4KICA8cG9seWdvbiBmaWxsPSIjRkZGRjAwIiBwb2ludHM9IjEyLDQgMTMuMDUsNy4yNCAxNi40NSw3LjI0IDEzLjcsOS4yNiAxNC43NiwxMi41IDEyLDEwLjQ3IDkuMjQsMTIuNSAxMC4zLDkuMjYgNy41NSw3LjI0IDEwLjk1LDcuMjQiLz4KPC9zdmc+Cg==");
+}
+
+.lang-flag-ar {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2Ij4KICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIGZpbGw9IiNmZmYiLz4KICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iNS4zMyIgZmlsbD0iIzAwNkMzNSIvPgogIDxyZWN0IHk9IjEwLjY3IiB3aWR0aD0iMjQiIGhlaWdodD0iNS4zMyIgZmlsbD0iIzAwNkMzNSIvPgo8L3N2Zz4K");
 }
 
 .lang-switcher-menu.dropdown-menu {
