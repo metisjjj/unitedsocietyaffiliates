@@ -22,15 +22,21 @@
         return res.json();
     }
 
+    function snapshotOriginals() {
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+            if (el.dataset.i18nOriginal === undefined) {
+                el.dataset.i18nOriginal = el.innerHTML;
+            }
+        });
+    }
+
     function applyDictionary(dict) {
         document.querySelectorAll('[data-i18n]').forEach((el) => {
+            const original = el.dataset.i18nOriginal;
             const value = dict && dict[el.getAttribute('data-i18n')];
-            if (!value) return; // no entry -> leave existing English text as-is
-            if (value.indexOf('<') !== -1 || value.indexOf('&') !== -1) {
-                el.innerHTML = value;
-            } else {
-                el.textContent = value;
-            }
+            const html = value || original; // fall back to the original English if no entry
+            if (html === undefined) return;
+            el.innerHTML = html;
         });
     }
 
@@ -72,6 +78,7 @@
     window.usaI18n = { setLanguage, getStoredLang, SUPPORTED };
 
     document.addEventListener('DOMContentLoaded', () => {
+        snapshotOriginals();
         setLanguage(getStoredLang(), { persist: false });
 
         document.querySelectorAll('.lang-switcher-option').forEach((btn) => {
