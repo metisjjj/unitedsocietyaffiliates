@@ -35,21 +35,33 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#home" data-i18n="common.nav.home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="common.nav.about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Programs</a>
+                        <a href="#" class="dropdown-toggle" data-i18n="common.nav.programs">Programs</a>
                         <ul class="dropdown-menu">
-                            <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                            <li><a href="pal-program.html">P.A.L. Program</a></li>
-                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars">Chess Wars Series</a></li>
-                            <li><a href="big-cuzin.html">Big Cuzin'</a></li>
-                            <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
+                            <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                            <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars" data-i18n="common.nav.programs.chess-wars-series">Chess Wars Series</a></li>
+                            <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                            <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#get-involved">Get Involved</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                    <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    <li class="dropdown lang-switcher">
+                        <button type="button" class="dropdown-toggle lang-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+                            <span class="lang-switcher-flag">🇺🇸</span>
+                            <span class="lang-switcher-code">EN</span>
+                        </button>
+                        <ul class="dropdown-menu lang-switcher-menu" role="menu">
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="en" aria-pressed="true"><span class="lang-switcher-flag">🇺🇸</span> EN</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="es" aria-pressed="false"><span class="lang-switcher-flag">🇪🇸</span> ES</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="vi" aria-pressed="false"><span class="lang-switcher-flag">🇻🇳</span> VI</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="ar" aria-pressed="false"><span class="lang-switcher-flag">🇸🇦</span> AR</button></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -59,18 +71,18 @@
     <section class="program-hero">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Home</a> / <a href="#">Programs</a> / <span>P.A.L.</span>
+                <a href="index.html" data-i18n="common.nav.home">Home</a> / <a href="#" data-i18n="common.nav.programs">Programs</a> / <span data-i18n="pal.breadcrumb.current">P.A.L.</span>
             </div>
             <div class="program-hero-band" role="img" aria-label="P.A.L. — Publish A Life Program. A United Society Affiliates × Upstate Printing Initiative. Syracuse, New York.">
                 <div class="hero-band-left">
-                    <p class="hero-presents">United Society Affiliates Presents</p>
+                    <p class="hero-presents" data-i18n="pal.hero.presents">United Society Affiliates Presents</p>
                     <p class="hero-pal">P.A.L.</p>
-                    <p class="hero-pal-sub">Publish A Life Program</p>
+                    <p class="hero-pal-sub" data-i18n="pal.hero.subtitle">Publish A Life Program</p>
                 </div>
                 <div class="hero-band-divider"></div>
                 <div class="hero-band-right">
-                    <p class="hero-tagline">Your Story. Your Legacy.<br>Published for Generations.</p>
-                    <p class="hero-desc">A powerful partnership between United Society Affiliates and Upstate Printing to help individuals turn their stories into professionally published books.</p>
+                    <p class="hero-tagline" data-i18n="pal.hero.tagline">Your Story. Your Legacy.<br>Published for Generations.</p>
+                    <p class="hero-desc" data-i18n="pal.hero.description">A powerful partnership between United Society Affiliates and Upstate Printing to help individuals turn their stories into professionally published books.</p>
                 </div>
             </div>
         </div>
@@ -79,10 +91,10 @@
     <!-- Program Overview -->
     <section class="program-overview">
         <div class="container">
-            <h2>Program Overview</h2>
+            <h2 data-i18n="pal.overview.heading">Program Overview</h2>
             <div class="overview-text">
-                <p class="lead-text">P.A.L. (Publish A Life) is a community-powered publishing initiative designed to preserve human stories, ideas, and lived experiences by transforming them into professionally printed works.</p>
-                <p>Through education, access, and production support, P.A.L. empowers underserved voices to achieve literary immortality—ensuring their stories live beyond a single lifetime and inspire generations to come.</p>
+                <p class="lead-text" data-i18n="pal.overview.lead">P.A.L. (Publish A Life) is a community-powered publishing initiative designed to preserve human stories, ideas, and lived experiences by transforming them into professionally printed works.</p>
+                <p data-i18n="pal.overview.body">Through education, access, and production support, P.A.L. empowers underserved voices to achieve literary immortality—ensuring their stories live beyond a single lifetime and inspire generations to come.</p>
             </div>
             <img src="images/publish-a-life-program-overview.png" alt="P.A.L. Program Overview diagram" class="overview-image">
         </div>
@@ -93,16 +105,16 @@
         <div class="container">
             <div class="statements-grid">
                 <div class="statement-card">
-                    <h2>Mission Statement</h2>
-                    <p>To create literary immortality by empowering individuals from underserved communities to publish their stories, ideas, and lived experiences—transforming lives into legacies.</p>
+                    <h2 data-i18n="pal.statements.mission.heading">Mission Statement</h2>
+                    <p data-i18n="pal.statements.mission.body">To create literary immortality by empowering individuals from underserved communities to publish their stories, ideas, and lived experiences—transforming lives into legacies.</p>
                 </div>
                 <div class="statement-card">
-                    <h2>Vision Statement</h2>
-                    <p>A future where every voice has the opportunity to be preserved, shared, and remembered—where authorship becomes a bridge between generations, culture, and history.</p>
+                    <h2 data-i18n="pal.statements.vision.heading">Vision Statement</h2>
+                    <p data-i18n="pal.statements.vision.body">A future where every voice has the opportunity to be preserved, shared, and remembered—where authorship becomes a bridge between generations, culture, and history.</p>
                 </div>
                 <div class="statement-card statement-wide">
-                    <h2>Purpose Statement</h2>
-                    <p>The purpose of P.A.L. is to create an "immortality effect" by enabling individuals to document their lives, thoughts, and innovations in permanent, published form—ensuring their impact endures long after their lifetime.</p>
+                    <h2 data-i18n="pal.statements.purpose.heading">Purpose Statement</h2>
+                    <p data-i18n="pal.statements.purpose.body">The purpose of P.A.L. is to create an "immortality effect" by enabling individuals to document their lives, thoughts, and innovations in permanent, published form—ensuring their impact endures long after their lifetime.</p>
                 </div>
             </div>
         </div>
@@ -112,9 +124,9 @@
     <section class="philosophy-section">
         <div class="container">
             <div class="philosophy-content">
-                <h2>Core Philosophy: The Immortality of Authors</h2>
-                <p class="philosophy-quote">"An author never truly dies."</p>
-                <p>Words outlive everything—challenging even death itself. For those who have not been afforded the privilege of authorship, P.A.L. offers not just a service, but a right—especially for excluded voices in underrepresented spaces.</p>
+                <h2 data-i18n="pal.philosophy.heading">Core Philosophy: The Immortality of Authors</h2>
+                <p class="philosophy-quote" data-i18n="pal.philosophy.quote">"An author never truly dies."</p>
+                <p data-i18n="pal.philosophy.body">Words outlive everything—challenging even death itself. For those who have not been afforded the privilege of authorship, P.A.L. offers not just a service, but a right—especially for excluded voices in underrepresented spaces.</p>
             </div>
         </div>
     </section>
@@ -122,42 +134,42 @@
     <!-- Target Participants -->
     <section class="participants-section">
         <div class="container">
-            <h2>Target Participants</h2>
+            <h2 data-i18n="pal.participants.heading">Target Participants</h2>
             <div class="participants-grid">
                 <div class="participant-card">
                     <div class="participant-icon">👟</div>
-                    <h3>Underserved Youth</h3>
-                    <p>Ages 12-24</p>
+                    <h3 data-i18n="pal.participants.youth.title">Underserved Youth</h3>
+                    <p data-i18n="pal.participants.youth.body">Ages 12-24</p>
                 </div>
                 <div class="participant-card">
                     <div class="participant-icon">✍️</div>
-                    <h3>First-Time Authors</h3>
-                    <p>Aspiring writers</p>
+                    <h3 data-i18n="pal.participants.first-time.title">First-Time Authors</h3>
+                    <p data-i18n="pal.participants.first-time.body">Aspiring writers</p>
                 </div>
                 <div class="participant-card">
                     <div class="participant-icon">👴</div>
-                    <h3>Seniors</h3>
-                    <p>Legacy preservation</p>
+                    <h3 data-i18n="pal.participants.seniors.title">Seniors</h3>
+                    <p data-i18n="pal.participants.seniors.body">Legacy preservation</p>
                 </div>
                 <div class="participant-card">
                     <div class="participant-icon">✊</div>
-                    <h3>Community Leaders</h3>
-                    <p>Activists & advocates</p>
+                    <h3 data-i18n="pal.participants.leaders.title">Community Leaders</h3>
+                    <p data-i18n="pal.participants.leaders.body">Activists & advocates</p>
                 </div>
                 <div class="participant-card">
                     <div class="participant-icon">🔄</div>
-                    <h3>Returning Citizens</h3>
-                    <p>Post-incarceration</p>
+                    <h3 data-i18n="pal.participants.returning.title">Returning Citizens</h3>
+                    <p data-i18n="pal.participants.returning.body">Post-incarceration</p>
                 </div>
                 <div class="participant-card">
                     <div class="participant-icon">🏢</div>
-                    <h3>Nonprofit Founders</h3>
-                    <p>Social entrepreneurs</p>
+                    <h3 data-i18n="pal.participants.nonprofit.title">Nonprofit Founders</h3>
+                    <p data-i18n="pal.participants.nonprofit.body">Social entrepreneurs</p>
                 </div>
                 <div class="participant-card">
                     <div class="participant-icon">💡</div>
-                    <h3>Inventors & Innovators</h3>
-                    <p>Intellectual property</p>
+                    <h3 data-i18n="pal.participants.inventors.title">Inventors & Innovators</h3>
+                    <p data-i18n="pal.participants.inventors.body">Intellectual property</p>
                 </div>
             </div>
         </div>
@@ -166,45 +178,45 @@
     <!-- Program Components -->
     <section class="components-section">
         <div class="container">
-            <h2>Program Components</h2>
+            <h2 data-i18n="pal.components.heading">Program Components</h2>
             <div class="components-list">
                 <div class="component-item">
                     <div class="component-number">1</div>
                     <div class="component-content">
-                        <h3>Story Discovery & Development</h3>
-                        <p><strong>Participants receive guidance in:</strong></p>
+                        <h3 data-i18n="pal.components.1.title">Story Discovery & Development</h3>
+                        <p data-i18n="pal.components.1.guidance-label"><strong>Participants receive guidance in:</strong></p>
                         <ul>
-                            <li>Personal memoir writing, poetry & essays</li>
-                            <li>Business authorship</li>
-                            <li>Idea-to-manuscript development</li>
+                            <li data-i18n="pal.components.1.item1">Personal memoir writing, poetry & essays</li>
+                            <li data-i18n="pal.components.1.item2">Business authorship</li>
+                            <li data-i18n="pal.components.1.item3">Idea-to-manuscript development</li>
                         </ul>
-                        <p><strong>Delivery:</strong> In-person & online content creation workshops</p>
+                        <p data-i18n="pal.components.1.delivery"><strong>Delivery:</strong> In-person & online content creation workshops</p>
                     </div>
                 </div>
 
                 <div class="component-item">
                     <div class="component-number">2</div>
                     <div class="component-content">
-                        <h3>Authorship Pathway Facilitation</h3>
-                        <p><strong>Participants learn:</strong></p>
+                        <h3 data-i18n="pal.components.2.title">Authorship Pathway Facilitation</h3>
+                        <p data-i18n="pal.components.2.learn-label"><strong>Participants learn:</strong></p>
                         <ul>
-                            <li>Copyright ownership</li>
-                            <li>ISBNs, formatting & editorial basics</li>
-                            <li>Branding & author identity</li>
+                            <li data-i18n="pal.components.2.item1">Copyright ownership</li>
+                            <li data-i18n="pal.components.2.item2">ISBNs, formatting & editorial basics</li>
+                            <li data-i18n="pal.components.2.item3">Branding & author identity</li>
                         </ul>
-                        <p><strong>Focus:</strong> Full publishing lifecycle education</p>
+                        <p data-i18n="pal.components.2.focus"><strong>Focus:</strong> Full publishing lifecycle education</p>
                     </div>
                 </div>
 
                 <div class="component-item">
                     <div class="component-number">3</div>
                     <div class="component-content">
-                        <h3>Print Production & Distribution by Upstate Printing</h3>
-                        <p><strong>Services include:</strong></p>
+                        <h3 data-i18n="pal.components.3.title">Print Production & Distribution by Upstate Printing</h3>
+                        <p data-i18n="pal.components.3.services-label"><strong>Services include:</strong></p>
                         <ul>
-                            <li>Short-run printing & bulk orders</li>
-                            <li>Archival-quality physical books & community anthology editions</li>
-                            <li>Books placed in participants' hands</li>
+                            <li data-i18n="pal.components.3.item1">Short-run printing & bulk orders</li>
+                            <li data-i18n="pal.components.3.item2">Archival-quality physical books & community anthology editions</li>
+                            <li data-i18n="pal.components.3.item3">Books placed in participants' hands</li>
                         </ul>
                     </div>
                 </div>
@@ -212,12 +224,12 @@
                 <div class="component-item">
                     <div class="component-number">4</div>
                     <div class="component-content">
-                        <h3>Legacy & Community Collection</h3>
-                        <p><strong>Each published work contributes to:</strong></p>
+                        <h3 data-i18n="pal.components.4.title">Legacy & Community Collection</h3>
+                        <p data-i18n="pal.components.4.contributes-label"><strong>Each published work contributes to:</strong></p>
                         <ul>
-                            <li>Local libraries</li>
-                            <li>Schools & community centers</li>
-                            <li>Digital archives for permanent recognition</li>
+                            <li data-i18n="pal.components.4.item1">Local libraries</li>
+                            <li data-i18n="pal.components.4.item2">Schools & community centers</li>
+                            <li data-i18n="pal.components.4.item3">Digital archives for permanent recognition</li>
                         </ul>
                     </div>
                 </div>
@@ -228,23 +240,23 @@
     <!-- Impact Goals -->
     <section class="impact-section">
         <div class="container">
-            <h2>Measurable Impact Goals</h2>
+            <h2 data-i18n="pal.impact.heading">Measurable Impact Goals</h2>
             <div class="impact-grid">
                 <div class="impact-card">
                     <div class="impact-number">50+</div>
-                    <p>Published authors annually</p>
+                    <p data-i18n="pal.impact.authors">Published authors annually</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">500+</div>
-                    <p>Books distributed per year</p>
+                    <p data-i18n="pal.impact.books">Books distributed per year</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">10+</div>
-                    <p>Workshop series hosted</p>
+                    <p data-i18n="pal.impact.workshops">Workshop series hosted</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">100%</div>
-                    <p>Participant ownership of copyright</p>
+                    <p data-i18n="pal.impact.copyright">Participant ownership of copyright</p>
                 </div>
             </div>
         </div>
@@ -253,23 +265,23 @@
     <!-- Why This Matters -->
     <section class="why-matters-section">
         <div class="container">
-            <h2>Why This Matters</h2>
+            <h2 data-i18n="pal.why-matters.heading">Why This Matters</h2>
             <div class="why-matters-grid">
                 <div class="why-matter-item">
-                    <h3>📖 Representation</h3>
-                    <p>Underserved communities are historically excluded from traditional publishing</p>
+                    <h3 data-i18n="pal.why-matters.representation.title">📖 Representation</h3>
+                    <p data-i18n="pal.why-matters.representation.body">Underserved communities are historically excluded from traditional publishing</p>
                 </div>
                 <div class="why-matter-item">
-                    <h3>🏛️ Cultural Preservation</h3>
-                    <p>Stories from marginalized voices risk disappearing without documentation</p>
+                    <h3 data-i18n="pal.why-matters.preservation.title">🏛️ Cultural Preservation</h3>
+                    <p data-i18n="pal.why-matters.preservation.body">Stories from marginalized voices risk disappearing without documentation</p>
                 </div>
                 <div class="why-matter-item">
-                    <h3>💪 Empowerment</h3>
-                    <p>Authorship provides dignity, legacy, and intergenerational impact</p>
+                    <h3 data-i18n="pal.why-matters.empowerment.title">💪 Empowerment</h3>
+                    <p data-i18n="pal.why-matters.empowerment.body">Authorship provides dignity, legacy, and intergenerational impact</p>
                 </div>
                 <div class="why-matter-item">
-                    <h3>🌉 Bridge Building</h3>
-                    <p>Published works create understanding across cultural and generational divides</p>
+                    <h3 data-i18n="pal.why-matters.bridge.title">🌉 Bridge Building</h3>
+                    <p data-i18n="pal.why-matters.bridge.body">Published works create understanding across cultural and generational divides</p>
                 </div>
             </div>
         </div>
@@ -279,12 +291,12 @@
     <section class="partnership-highlight">
         <div class="container">
             <div class="partnership-content">
-                <h2>Partnership with Upstate Printing</h2>
-                <p>United Society Affiliates has partnered with Upstate Printing to provide professional printing services, ensuring that every participant receives high-quality, archival-standard books that preserve their stories for generations.</p>
-                <p>This collaboration bridges the gap between literary creation and physical publication, making authorship accessible to those who have historically been excluded from traditional publishing pathways.</p>
-                
+                <h2 data-i18n="pal.partnership.heading">Partnership with Upstate Printing</h2>
+                <p data-i18n="pal.partnership.body1">United Society Affiliates has partnered with Upstate Printing to provide professional printing services, ensuring that every participant receives high-quality, archival-standard books that preserve their stories for generations.</p>
+                <p data-i18n="pal.partnership.body2">This collaboration bridges the gap between literary creation and physical publication, making authorship accessible to those who have historically been excluded from traditional publishing pathways.</p>
+
                 <div class="pilot-timeline">
-                    <h3>Pilot Timeline (6-Months)</h3>
+                    <h3 data-i18n="pal.partnership.timeline-heading">Pilot Timeline (6-Months)</h3>
                     <img src="images/pal-pilot-timeline.png" alt="P.A.L. Pilot Timeline showing 6-month program phases from setup through launch" class="timeline-image">
                 </div>
             </div>
@@ -297,21 +309,21 @@
 
             <!-- Header -->
             <div class="chess-wars-header">
-                <p class="chess-wars-label">A P.A.L. Program Original Series</p>
-                <h2>Chess Wars</h2>
-                <p class="chess-wars-tagline">Learn Before You Conquer.</p>
-                <p class="chess-wars-genre">An Epic Historical Fantasy Graphic Novel Series</p>
+                <p class="chess-wars-label" data-i18n="pal.chesswars.label">A P.A.L. Program Original Series</p>
+                <h2 data-i18n="common.nav.programs.chess-wars">Chess Wars</h2>
+                <p class="chess-wars-tagline" data-i18n="chesswars.hero.tagline">Learn Before You Conquer.</p>
+                <p class="chess-wars-genre" data-i18n="pal.chesswars.genre">An Epic Historical Fantasy Graphic Novel Series</p>
             </div>
 
             <!-- Overview -->
             <div class="chess-wars-overview">
                 <div class="chess-wars-overview-text">
-                    <p>Chess Wars is an original historical fantasy graphic novel series that transforms the world's greatest civilizations into a legendary battlefield where every duel is inspired by the timeless strategy of chess.</p>
-                    <p>At the heart of the saga is <strong>Yusuf Avatara</strong>, a young warrior born into a powerful legacy after the death of his father, the legendary Chess King <strong>Musa Avatara</strong>. Guided by the wisdom of his mother, <strong>Amora Avatara</strong>, and entrusted with the sacred Diamond Stone, Yusuf embarks on a journey across the ancient world to uncover the truth behind his father's death.</p>
-                    <p>Unlike traditional heroes, Yusuf does not seek victory through domination alone. Before every duel, he studies the customs, philosophies, and traditions of the people he encounters. Every civilization teaches him a new way of thinking, and every opponent becomes both a challenger and a teacher.</p>
-                    <p>From the forests of Early America and the mountains of Peru to the temples of India, the castles of Europe, the fortress cities of Mesopotamia, the kingdoms of Africa, and the imperial courts of China, each encounter expands Yusuf's understanding of leadership, strategy, and humanity.</p>
-                    <p>As the battles escalate from Pawns to Bishops, Knights, Rooks, Queens, and Kings, Yusuf discovers that the greatest challenge is not defeating his enemies — it is understanding the forces that shaped them.</p>
-                    <p>The revelation at the end of the first saga changes everything: the man Yusuf has pursued is not the emperor who killed his father, but the emperor's son. Their confrontation ends in a stalemate, setting the stage for an even greater conflict that spans the Chess Wars trilogy.</p>
+                    <p data-i18n="pal.chesswars.overview.p1">Chess Wars is an original historical fantasy graphic novel series that transforms the world's greatest civilizations into a legendary battlefield where every duel is inspired by the timeless strategy of chess.</p>
+                    <p data-i18n="pal.chesswars.overview.p2">At the heart of the saga is <strong>Yusuf Avatara</strong>, a young warrior born into a powerful legacy after the death of his father, the legendary Chess King <strong>Musa Avatara</strong>. Guided by the wisdom of his mother, <strong>Amora Avatara</strong>, and entrusted with the sacred Diamond Stone, Yusuf embarks on a journey across the ancient world to uncover the truth behind his father's death.</p>
+                    <p data-i18n="pal.chesswars.overview.p3">Unlike traditional heroes, Yusuf does not seek victory through domination alone. Before every duel, he studies the customs, philosophies, and traditions of the people he encounters. Every civilization teaches him a new way of thinking, and every opponent becomes both a challenger and a teacher.</p>
+                    <p data-i18n="pal.chesswars.overview.p4">From the forests of Early America and the mountains of Peru to the temples of India, the castles of Europe, the fortress cities of Mesopotamia, the kingdoms of Africa, and the imperial courts of China, each encounter expands Yusuf's understanding of leadership, strategy, and humanity.</p>
+                    <p data-i18n="pal.chesswars.overview.p5">As the battles escalate from Pawns to Bishops, Knights, Rooks, Queens, and Kings, Yusuf discovers that the greatest challenge is not defeating his enemies — it is understanding the forces that shaped them.</p>
+                    <p data-i18n="pal.chesswars.overview.p6">The revelation at the end of the first saga changes everything: the man Yusuf has pursued is not the emperor who killed his father, but the emperor's son. Their confrontation ends in a stalemate, setting the stage for an even greater conflict that spans the Chess Wars trilogy.</p>
                 </div>
                 <div class="chess-wars-overview-image">
                     <a href="images/pal-chess-wars-avatara-yusuf-musa-amora.png" target="_blank" rel="noopener">
@@ -323,42 +335,42 @@
 
             <!-- Library Link -->
             <div class="chess-wars-download">
-                <a href="chess-wars.html" class="btn chess-wars-btn-download">
-                    View the Full Chess Wars Library →
+                <a href="chess-wars.html" class="btn chess-wars-btn-download" data-i18n="pal.chesswars.view-library">
+                    View the Full Chess Wars Library &rarr;
                 </a>
             </div>
 
             <!-- Why Different -->
             <div class="chess-wars-why">
-                <h3>Why Chess Wars Is Different</h3>
+                <h3 data-i18n="pal.chesswars.why-different.heading">Why Chess Wars Is Different</h3>
                 <ul class="chess-wars-bullets">
-                    <li>A unique blend of historical inspiration and original fantasy worldbuilding</li>
-                    <li>A hero whose strength comes from wisdom, discipline, and cultural understanding</li>
-                    <li>A rich cast of civilizations represented through the symbolism and strategy of chess</li>
-                    <li>Neo-Historical Fantasy Realism with cinematic, painterly artwork</li>
-                    <li>A trilogy designed for graphic novels, animation, games, collectibles, and educational adaptations</li>
+                    <li data-i18n="pal.chesswars.why-different.item1">A unique blend of historical inspiration and original fantasy worldbuilding</li>
+                    <li data-i18n="pal.chesswars.why-different.item2">A hero whose strength comes from wisdom, discipline, and cultural understanding</li>
+                    <li data-i18n="pal.chesswars.why-different.item3">A rich cast of civilizations represented through the symbolism and strategy of chess</li>
+                    <li data-i18n="pal.chesswars.why-different.item4">Neo-Historical Fantasy Realism with cinematic, painterly artwork</li>
+                    <li data-i18n="pal.chesswars.why-different.item5">A trilogy designed for graphic novels, animation, games, collectibles, and educational adaptations</li>
                 </ul>
             </div>
 
             <!-- Chess Philosophy -->
             <div class="chess-wars-philosophy">
-                <p class="chess-wars-philosophy-quote">"Learn Before You Conquer."</p>
-                <p class="chess-wars-philosophy-intro">The Chess Wars universe is built upon five guiding principles:</p>
+                <p class="chess-wars-philosophy-quote" data-i18n="pal.chesswars.philosophy.quote">"Learn Before You Conquer."</p>
+                <p class="chess-wars-philosophy-intro" data-i18n="pal.chesswars.philosophy.intro">The Chess Wars universe is built upon five guiding principles:</p>
                 <ol class="chess-wars-principles">
-                    <li>Observe Before Acting</li>
-                    <li>Learn Before Judging</li>
-                    <li>Adapt Before Attacking</li>
-                    <li>Respect Before Conquering</li>
-                    <li>Strategy Before Strength</li>
+                    <li data-i18n="pal.chesswars.philosophy.principle1">Observe Before Acting</li>
+                    <li data-i18n="pal.chesswars.philosophy.principle2">Learn Before Judging</li>
+                    <li data-i18n="pal.chesswars.philosophy.principle3">Adapt Before Attacking</li>
+                    <li data-i18n="pal.chesswars.philosophy.principle4">Respect Before Conquering</li>
+                    <li data-i18n="pal.chesswars.philosophy.principle5">Strategy Before Strength</li>
                 </ol>
-                <p class="chess-wars-philosophy-close">These principles define Yusuf's journey and the moral foundation of the entire series.</p>
+                <p class="chess-wars-philosophy-close" data-i18n="pal.chesswars.philosophy.close">These principles define Yusuf's journey and the moral foundation of the entire series.</p>
             </div>
 
             <!-- Closing -->
             <div class="chess-wars-closing">
-                <p>Whether you're a fan of epic adventures, strategic battles, rich worldbuilding, or unforgettable characters, Chess Wars invites you to experience a story where every move matters.</p>
-                <p class="chess-wars-closing-tagline">One board. Sixteen civilizations. Endless possibilities.</p>
-                <p class="chess-wars-closing-sub">Every Move Has a Story. Every Culture Holds a Lesson.</p>
+                <p data-i18n="pal.chesswars.closing.body">Whether you're a fan of epic adventures, strategic battles, rich worldbuilding, or unforgettable characters, Chess Wars invites you to experience a story where every move matters.</p>
+                <p class="chess-wars-closing-tagline" data-i18n="chesswars.closing.tagline">One board. Sixteen civilizations. Endless possibilities.</p>
+                <p class="chess-wars-closing-sub" data-i18n="chesswars.closing.sub">Every Move Has a Story. Every Culture Holds a Lesson.</p>
             </div>
 
         </div>
@@ -367,11 +379,11 @@
     <!-- Call to Action -->
     <section class="program-cta">
         <div class="container">
-            <h2>Your Story Deserves to Be Published</h2>
-            <p>Join P.A.L. and transform your life into a legacy that will inspire generations to come.</p>
+            <h2 data-i18n="pal.cta.heading">Your Story Deserves to Be Published</h2>
+            <p data-i18n="pal.cta.body">Join P.A.L. and transform your life into a legacy that will inspire generations to come.</p>
             <div class="cta-buttons">
-                <a href="index.html#contact" class="btn btn-primary">Become an Author</a>
-                <a href="index.html#get-involved" class="btn btn-secondary">Support P.A.L.</a>
+                <a href="index.html#contact" class="btn btn-primary" data-i18n="pal.cta.become-author">Become an Author</a>
+                <a href="index.html#get-involved" class="btn btn-secondary" data-i18n="pal.cta.support">Support P.A.L.</a>
             </div>
         </div>
     </section>
@@ -381,34 +393,35 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>United Society Affiliates</h3>
-                    <p>A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
+                    <h3 data-i18n="common.footer.org-name">United Society Affiliates</h3>
+                    <p data-i18n="common.footer.tagline">A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="common.footer.quick-links-heading">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                        <li><a href="pal-program.html">P.A.L. Program</a></li>
-                        <li><a href="chess-wars.html">Chess Wars</a></li>
-                        <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
-                        <li><a href="index.html#get-involved">Get Involved</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#about" data-i18n="common.footer.about-us">About Us</a></li>
+                        <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                        <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                        <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                        <li><a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a></li>
+                        <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Syracuse, New York</p>
+                    <h4 data-i18n="common.footer.contact-heading">Contact</h4>
+                    <p data-i18n="common.footer.location">Syracuse, New York</p>
                     <p>info@unitedsocietyaffiliates.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 United Society Affiliates. All rights reserved.</p>
+                <p data-i18n="common.footer.copyright">&copy; 2026 United Society Affiliates. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,6 +3,12 @@
     const DEFAULT_LANG = 'en';
     const STORAGE_KEY = 'usa-lang';
     const RTL_LANGS = ['ar'];
+    const LANG_META = {
+        en: { flag: '🇺🇸', code: 'EN' },
+        es: { flag: '🇪🇸', code: 'ES' },
+        vi: { flag: '🇻🇳', code: 'VI' },
+        ar: { flag: '🇸🇦', code: 'AR' },
+    };
 
     function getStoredLang() {
         const stored = localStorage.getItem(STORAGE_KEY);
@@ -35,8 +41,15 @@
     }
 
     function updateSwitcherState(lang) {
-        document.querySelectorAll('.lang-switcher-btn').forEach((btn) => {
+        document.querySelectorAll('.lang-switcher-option').forEach((btn) => {
             btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
+        });
+        const meta = LANG_META[lang] || LANG_META[DEFAULT_LANG];
+        document.querySelectorAll('.lang-switcher-toggle').forEach((toggle) => {
+            const flagEl = toggle.querySelector('.lang-switcher-flag');
+            const codeEl = toggle.querySelector('.lang-switcher-code');
+            if (flagEl) flagEl.textContent = meta.flag;
+            if (codeEl) codeEl.textContent = meta.code;
         });
     }
 
@@ -58,10 +71,13 @@
     document.addEventListener('DOMContentLoaded', () => {
         setLanguage(getStoredLang(), { persist: false });
 
-        document.querySelectorAll('.lang-switcher-btn').forEach((btn) => {
+        document.querySelectorAll('.lang-switcher-option').forEach((btn) => {
             btn.addEventListener('click', () => {
                 const scrollY = window.scrollY;
                 setLanguage(btn.dataset.lang).then(() => window.scrollTo({ top: scrollY }));
+                btn.blur();
+                const dropdown = btn.closest('.lang-switcher');
+                if (dropdown) dropdown.classList.remove('active');
             });
         });
     });

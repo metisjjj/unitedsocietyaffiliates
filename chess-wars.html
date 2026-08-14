@@ -50,13 +50,17 @@
                     </li>
                     <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
                     <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
-                    <li class="nav-lang-item">
-                        <div class="lang-switcher" role="group" aria-label="Language">
-                            <button type="button" class="lang-switcher-btn" data-lang="en" aria-pressed="true">EN</button>
-                            <button type="button" class="lang-switcher-btn" data-lang="es" aria-pressed="false">ES</button>
-                            <button type="button" class="lang-switcher-btn" data-lang="vi" aria-pressed="false">VI</button>
-                            <button type="button" class="lang-switcher-btn" data-lang="ar" aria-pressed="false">AR</button>
-                        </div>
+                    <li class="dropdown lang-switcher">
+                        <button type="button" class="dropdown-toggle lang-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+                            <span class="lang-switcher-flag">🇺🇸</span>
+                            <span class="lang-switcher-code">EN</span>
+                        </button>
+                        <ul class="dropdown-menu lang-switcher-menu" role="menu">
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="en" aria-pressed="true"><span class="lang-switcher-flag">🇺🇸</span> EN</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="es" aria-pressed="false"><span class="lang-switcher-flag">🇪🇸</span> ES</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="vi" aria-pressed="false"><span class="lang-switcher-flag">🇻🇳</span> VI</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="ar" aria-pressed="false"><span class="lang-switcher-flag">🇸🇦</span> AR</button></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

@@ -67,13 +67,17 @@
                     </li>
                     <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
                     <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
-                    <li class="nav-lang-item">
-                        <div class="lang-switcher" role="group" aria-label="Language">
-                            <button type="button" class="lang-switcher-btn" data-lang="en" aria-pressed="true">EN</button>
-                            <button type="button" class="lang-switcher-btn" data-lang="es" aria-pressed="false">ES</button>
-                            <button type="button" class="lang-switcher-btn" data-lang="vi" aria-pressed="false">VI</button>
-                            <button type="button" class="lang-switcher-btn" data-lang="ar" aria-pressed="false">AR</button>
-                        </div>
+                    <li class="dropdown lang-switcher">
+                        <button type="button" class="dropdown-toggle lang-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+                            <span class="lang-switcher-flag">🇺🇸</span>
+                            <span class="lang-switcher-code">EN</span>
+                        </button>
+                        <ul class="dropdown-menu lang-switcher-menu" role="menu">
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="en" aria-pressed="true"><span class="lang-switcher-flag">🇺🇸</span> EN</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="es" aria-pressed="false"><span class="lang-switcher-flag">🇪🇸</span> ES</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="vi" aria-pressed="false"><span class="lang-switcher-flag">🇻🇳</span> VI</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="ar" aria-pressed="false"><span class="lang-switcher-flag">🇸🇦</span> AR</button></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -97,11 +101,11 @@
                     <img src="images/united-society-affiliates-logo.png" alt="United Society Affiliates">
                 </div>
                 <div class="hero-split-text">
-                    <h1>Connecting Communities to Resources</h1>
-                    <p class="hero-subtitle">United Society Affiliates serves as your central hub for vital information, services, and opportunities in Syracuse, New York.</p>
+                    <h1 data-i18n="index.hero.title">Connecting Communities to Resources</h1>
+                    <p class="hero-subtitle" data-i18n="index.hero.subtitle">United Society Affiliates serves as your central hub for vital information, services, and opportunities in Syracuse, New York.</p>
                     <div class="hero-buttons">
-                        <a href="#services" class="btn btn-primary">Explore Services</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="#services" class="btn btn-primary" data-i18n="index.hero.explore-services">Explore Services</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="index.hero.get-in-touch">Get in Touch</a>
                     </div>
                 </div>
             </div>
@@ -112,11 +116,11 @@
     <section id="about" class="mission-section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Mission</h2>
+                <h2 data-i18n="index.mission.heading">Our Mission</h2>
                 <div class="underline"></div>
             </div>
             <div class="mission-content">
-                <p class="mission-text">The mission of United Society Affiliates is to provide structured pathways to information and community resources by serving as a directory and connector between individuals and supportive organizations. We aim to empower underserved communities through knowledge, collaboration, and equitable access to supportive services.</p>
+                <p class="mission-text" data-i18n="index.mission.body">The mission of United Society Affiliates is to provide structured pathways to information and community resources by serving as a directory and connector between individuals and supportive organizations. We aim to empower underserved communities through knowledge, collaboration, and equitable access to supportive services.</p>
             </div>
         </div>
     </section>
@@ -125,19 +129,19 @@
     <section class="founder-section">
         <div class="container">
             <div class="section-header">
-                <h2>About Clifford Ryan Jr.</h2>
+                <h2 data-i18n="index.founder.heading">About Clifford Ryan Jr.</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Founder & Executive Director</p>
+                <p class="section-subtitle" data-i18n="index.founder.subtitle">Founder & Executive Director</p>
             </div>
             <div class="founder-grid">
                 <div class="founder-image-wrapper">
                     <img src="clifford-ryan-jr.png" alt="Clifford Ryan Jr." class="founder-image">
                 </div>
                 <div class="founder-content">
-                    <p class="founder-intro">Clifford Ryan Jr.'s journey is a powerful testament to the themes of redemption, community advocacy, and the pursuit of a lasting legacy.</p>
-                    <p>Based in Syracuse, New York, Clifford has transformed personal setbacks and past experiences with the justice system into a mission of service and systemic change. Over the last decade, he has dedicated himself to building United Society Affiliates, a non-profit organization that serves as a vital central connector for underserved communities. His work is rooted in the belief that access to information and resources is the key to breaking cycles of poverty and incarceration.</p>
-                    <p>From establishing a virtual reality arena to bridge the digital divide to partnering with Syracuse University for legal literacy workshops, Clifford's vision is as innovative as it is compassionate. His story is not just about his own evolution, but about his commitment to "opening doors" for others—ensuring that the next generation has the guidance, technology, and advocacy they need to succeed.</p>
-                    <p>Through his podcast, <em>State of the Streets Address</em>, and his legislative work on transparency for the incarcerated, Clifford is redefining what it means to lead from the heart of the community.</p>
+                    <p class="founder-intro" data-i18n="index.founder.intro">Clifford Ryan Jr.'s journey is a powerful testament to the themes of redemption, community advocacy, and the pursuit of a lasting legacy.</p>
+                    <p data-i18n="index.founder.body1">Based in Syracuse, New York, Clifford has transformed personal setbacks and past experiences with the justice system into a mission of service and systemic change. Over the last decade, he has dedicated himself to building United Society Affiliates, a non-profit organization that serves as a vital central connector for underserved communities. His work is rooted in the belief that access to information and resources is the key to breaking cycles of poverty and incarceration.</p>
+                    <p data-i18n="index.founder.body2">From establishing a virtual reality arena to bridge the digital divide to partnering with Syracuse University for legal literacy workshops, Clifford's vision is as innovative as it is compassionate. His story is not just about his own evolution, but about his commitment to "opening doors" for others—ensuring that the next generation has the guidance, technology, and advocacy they need to succeed.</p>
+                    <p data-i18n="index.founder.body3">Through his podcast, <em>State of the Streets Address</em>, and his legislative work on transparency for the incarcerated, Clifford is redefining what it means to lead from the heart of the community.</p>
                 </div>
             </div>
         </div>
@@ -187,25 +191,25 @@
         <div class="container">
             <div class="problem-grid">
                 <div class="problem-content">
-                    <h2>Why We Exist</h2>
-                    <p>Many individuals in under-resourced communities are unaware of the programs and services already available to them. Lack of access to accurate information can result in missed opportunities, persistent hardship, unemployment, housing insecurity, and limited educational advancement.</p>
-                    <p>Local organizations often work independently, causing services to be fragmented and difficult to navigate. United Society Affiliates addresses this gap by functioning as a central hub for resource identification, referral, and guidance, ensuring individuals can easily find and utilize the services they need.</p>
+                    <h2 data-i18n="index.problem.heading">Why We Exist</h2>
+                    <p data-i18n="index.problem.body1">Many individuals in under-resourced communities are unaware of the programs and services already available to them. Lack of access to accurate information can result in missed opportunities, persistent hardship, unemployment, housing insecurity, and limited educational advancement.</p>
+                    <p data-i18n="index.problem.body2">Local organizations often work independently, causing services to be fragmented and difficult to navigate. United Society Affiliates addresses this gap by functioning as a central hub for resource identification, referral, and guidance, ensuring individuals can easily find and utilize the services they need.</p>
                 </div>
                 <div class="problem-stats">
                     <div class="stat-card">
                         <div class="stat-icon">📚</div>
-                        <h3>Information Access</h3>
-                        <p>Connecting people to existing resources they didn't know about</p>
+                        <h3 data-i18n="index.problem.stat1.title">Information Access</h3>
+                        <p data-i18n="index.problem.stat1.body">Connecting people to existing resources they didn't know about</p>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">🤝</div>
-                        <h3>Community Connection</h3>
-                        <p>Bridging gaps between organizations and individuals</p>
+                        <h3 data-i18n="index.problem.stat2.title">Community Connection</h3>
+                        <p data-i18n="index.problem.stat2.body">Bridging gaps between organizations and individuals</p>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">🎯</div>
-                        <h3>Guided Support</h3>
-                        <p>Providing structured pathways to opportunities</p>
+                        <h3 data-i18n="index.problem.stat3.title">Guided Support</h3>
+                        <p data-i18n="index.problem.stat3.body">Providing structured pathways to opportunities</p>
                     </div>
                 </div>
             </div>
@@ -216,45 +220,45 @@
     <section id="services" class="services-section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Programs & Services</h2>
+                <h2 data-i18n="index.services.heading">Our Programs & Services</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Comprehensive support designed to meet community needs</p>
+                <p class="section-subtitle" data-i18n="index.services.subtitle">Comprehensive support designed to meet community needs</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">📋</div>
-                    <h3>Resource Directory Services</h3>
-                    <p>Comprehensive database connecting you to local organizations, programs, and services tailored to your needs.</p>
+                    <h3 data-i18n="index.services.directory.title">Resource Directory Services</h3>
+                    <p data-i18n="index.services.directory.body">Comprehensive database connecting you to local organizations, programs, and services tailored to your needs.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">👥</div>
-                    <h3>Community Workshops</h3>
-                    <p>Educational sessions covering essential topics including financial literacy, job readiness, and life skills development.</p>
+                    <h3 data-i18n="index.services.workshops.title">Community Workshops</h3>
+                    <p data-i18n="index.services.workshops.body">Educational sessions covering essential topics including financial literacy, job readiness, and life skills development.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚖️</div>
-                    <h3>Advocacy Support</h3>
-                    <p>Guidance and representation to help you navigate systems and access the services you're entitled to receive.</p>
+                    <h3 data-i18n="index.services.advocacy.title">Advocacy Support</h3>
+                    <p data-i18n="index.services.advocacy.body">Guidance and representation to help you navigate systems and access the services you're entitled to receive.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">✏️</div>
-                    <h3>Tutoring & Academic Support</h3>
-                    <p>One-on-one and group tutoring sessions to support educational achievement for youth and adults.</p>
+                    <h3 data-i18n="index.services.tutoring.title">Tutoring & Academic Support</h3>
+                    <p data-i18n="index.services.tutoring.body">One-on-one and group tutoring sessions to support educational achievement for youth and adults.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🍎</div>
-                    <h3>Food Distribution Assistance</h3>
-                    <p>Coordination with local food programs to ensure community members have access to nutritious food resources.</p>
+                    <h3 data-i18n="index.services.food.title">Food Distribution Assistance</h3>
+                    <p data-i18n="index.services.food.body">Coordination with local food programs to ensure community members have access to nutritious food resources.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔍</div>
-                    <h3>Information Processing & Research</h3>
-                    <p>Assistance with navigating complex information, filling out applications, and understanding available options.</p>
+                    <h3 data-i18n="index.services.research.title">Information Processing & Research</h3>
+                    <p data-i18n="index.services.research.body">Assistance with navigating complex information, filling out applications, and understanding available options.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🌟</div>
-                    <h3><a href="big-cuzin.html" style="color:inherit;text-decoration:none;">Big Cuzin' Youth Mentorship</a></h3>
-                    <p>Empowering at-risk youth ages 13–21 in Syracuse through mentorship, life skills, leadership development, and the FORMIDABLE Workshop. <a href="big-cuzin.html">Learn more →</a></p>
+                    <h3><a href="big-cuzin.html" style="color:inherit;text-decoration:none;" data-i18n="index.services.big-cuzin.title">Big Cuzin' Youth Mentorship</a></h3>
+                    <p data-i18n="index.services.big-cuzin.body">Empowering at-risk youth ages 13–21 in Syracuse through mentorship, life skills, leadership development, and the FORMIDABLE Workshop. <a href="big-cuzin.html">Learn more &rarr;</a></p>
                 </div>
             </div>
         </div>
@@ -264,27 +268,27 @@
     <section class="target-section">
         <div class="container">
             <div class="section-header">
-                <h2>Who We Serve</h2>
+                <h2 data-i18n="index.serve.heading">Who We Serve</h2>
                 <div class="underline"></div>
             </div>
             <div class="target-content">
-                <p class="intro-text">United Society Affiliates primarily serves individuals and families with limited access to resource information, including:</p>
+                <p class="intro-text" data-i18n="index.serve.intro">United Society Affiliates primarily serves individuals and families with limited access to resource information, including:</p>
                 <div class="target-grid">
                     <div class="target-item">
                         <span class="check-icon">✓</span>
-                        <p>Low-income households seeking support services</p>
+                        <p data-i18n="index.serve.item1">Low-income households seeking support services</p>
                     </div>
                     <div class="target-item">
                         <span class="check-icon">✓</span>
-                        <p>Underserved youth and adults</p>
+                        <p data-i18n="index.serve.item2">Underserved youth and adults</p>
                     </div>
                     <div class="target-item">
                         <span class="check-icon">✓</span>
-                        <p>Recently relocated community members</p>
+                        <p data-i18n="index.serve.item3">Recently relocated community members</p>
                     </div>
                     <div class="target-item">
                         <span class="check-icon">✓</span>
-                        <p>Anyone experiencing difficulty navigating support services</p>
+                        <p data-i18n="index.serve.item4">Anyone experiencing difficulty navigating support services</p>
                     </div>
                 </div>
             </div>
@@ -295,9 +299,9 @@
     <section id="affiliates" class="affiliates-section">
         <div class="container">
             <div class="section-header">
-                <h2>Affiliates</h2>
+                <h2 data-i18n="index.affiliates.heading">Affiliates</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Organizations and businesses we proudly work alongside</p>
+                <p class="section-subtitle" data-i18n="index.affiliates.subtitle">Organizations and businesses we proudly work alongside</p>
             </div>
             <div class="affiliates-grid">
                 <a href="https://landing.ariamusic.com/" target="_blank" rel="noopener noreferrer" class="affiliate-card">
@@ -332,25 +336,25 @@
     <section id="get-involved" class="involved-section">
         <div class="container">
             <div class="section-header">
-                <h2>Get Involved</h2>
+                <h2 data-i18n="index.involved.heading">Get Involved</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Join us in making a difference in our community</p>
+                <p class="section-subtitle" data-i18n="index.involved.subtitle">Join us in making a difference in our community</p>
             </div>
             <div class="involved-grid">
                 <div class="involved-card">
-                    <h3>Volunteer</h3>
-                    <p>Support our mission through tutoring, mentoring, event assistance, and community outreach. Your time and skills can transform lives.</p>
-                    <a href="#contact" class="card-link">Learn More →</a>
+                    <h3 data-i18n="index.involved.volunteer.title">Volunteer</h3>
+                    <p data-i18n="index.involved.volunteer.body">Support our mission through tutoring, mentoring, event assistance, and community outreach. Your time and skills can transform lives.</p>
+                    <a href="#contact" class="card-link" data-i18n="index.involved.volunteer.cta">Learn More &rarr;</a>
                 </div>
                 <div class="involved-card">
-                    <h3>Donate</h3>
-                    <p>Your financial support helps us expand our services and reach more community members in need of guidance and resources.</p>
-                    <a href="#contact" class="card-link">Support Us →</a>
+                    <h3 data-i18n="index.involved.donate.title">Donate</h3>
+                    <p data-i18n="index.involved.donate.body">Your financial support helps us expand our services and reach more community members in need of guidance and resources.</p>
+                    <a href="#contact" class="card-link" data-i18n="index.involved.donate.cta">Support Us &rarr;</a>
                 </div>
                 <div class="involved-card">
-                    <h3>Partner</h3>
-                    <p>Organizations, businesses, and agencies can collaborate with us to strengthen our network and increase resource availability.</p>
-                    <a href="#contact" class="card-link">Partner With Us →</a>
+                    <h3 data-i18n="index.involved.partner.title">Partner</h3>
+                    <p data-i18n="index.involved.partner.body">Organizations, businesses, and agencies can collaborate with us to strengthen our network and increase resource availability.</p>
+                    <a href="#contact" class="card-link" data-i18n="index.involved.partner.cta">Partner With Us &rarr;</a>
                 </div>
             </div>
         </div>
@@ -360,34 +364,34 @@
     <section class="partnerships-section">
         <div class="container">
             <div class="section-header">
-                <h2>Partnerships & Collaborations</h2>
+                <h2 data-i18n="index.partnerships.heading">Partnerships & Collaborations</h2>
                 <div class="underline"></div>
             </div>
-            <p class="partnerships-intro">We collaborate with a wide network of organizations to increase resource availability and ensure comprehensive community support:</p>
+            <p class="partnerships-intro" data-i18n="index.partnerships.intro">We collaborate with a wide network of organizations to increase resource availability and ensure comprehensive community support:</p>
             <div class="partnerships-list">
                 <div class="partnership-item">
                     <span class="partnership-icon">🏫</span>
-                    <span>Educational Institutions</span>
+                    <span data-i18n="index.partnerships.educational">Educational Institutions</span>
                 </div>
                 <div class="partnership-item">
                     <span class="partnership-icon">🏢</span>
-                    <span>Nonprofit Organizations</span>
+                    <span data-i18n="index.partnerships.nonprofit">Nonprofit Organizations</span>
                 </div>
                 <div class="partnership-item">
                     <span class="partnership-icon">🍲</span>
-                    <span>Food Access Programs</span>
+                    <span data-i18n="index.partnerships.food">Food Access Programs</span>
                 </div>
                 <div class="partnership-item">
                     <span class="partnership-icon">💼</span>
-                    <span>Workforce Development Agencies</span>
+                    <span data-i18n="index.partnerships.workforce">Workforce Development Agencies</span>
                 </div>
                 <div class="partnership-item">
                     <span class="partnership-icon">⛪</span>
-                    <span>Faith-Based Organizations</span>
+                    <span data-i18n="index.partnerships.faith">Faith-Based Organizations</span>
                 </div>
                 <div class="partnership-item">
                     <span class="partnership-icon">🤝</span>
-                    <span>Community Service Networks</span>
+                    <span data-i18n="index.partnerships.community-service">Community Service Networks</span>
                 </div>
             </div>
         </div>
@@ -397,17 +401,17 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h2>Contact Us</h2>
+                <h2 data-i18n="index.contact.heading">Contact Us</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">We're here to help connect you with the resources you need</p>
+                <p class="section-subtitle" data-i18n="index.contact.subtitle">We're here to help connect you with the resources you need</p>
             </div>
             <div class="contact-content contact-form-only">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div>
-                            <h3>Location</h3>
-                            <p>Syracuse, New York</p>
+                            <h3 data-i18n="index.contact.location-heading">Location</h3>
+                            <p data-i18n="common.footer.location">Syracuse, New York</p>
                         </div>
                     </div>
                 </div>
@@ -415,22 +419,22 @@
                     <form class="contact-form" id="contactForm" action="https://formspree.io/f/xlgzwjyb" method="POST">
                         <input type="hidden" name="_subject" value="New message from United Society Affiliates website">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name" data-i18n="index.contact.form.name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" data-i18n="index.contact.form.email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
+                            <label for="subject" data-i18n="index.contact.form.subject">Subject</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message" data-i18n="index.contact.form.message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="index.contact.form.submit">Send Message</button>
                     </form>
                 </div>
             </div>
