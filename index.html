@@ -51,22 +51,30 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#home" data-i18n="common.nav.home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="common.nav.about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Programs</a>
+                        <a href="#" class="dropdown-toggle" data-i18n="common.nav.programs">Programs</a>
                         <ul class="dropdown-menu">
-                            <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                            <li><a href="pal-program.html">P.A.L. Program</a></li>
-                        <li><a href="chess-wars.html">Chess Wars</a></li>
-                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars">Chess Wars Series</a></li>
-                            <li><a href="big-cuzin.html">Big Cuzin'</a></li>
-                            <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
+                            <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                            <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                        <li><a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a></li>
+                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars" data-i18n="common.nav.programs.chess-wars-series">Chess Wars Series</a></li>
+                            <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                            <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#get-involved">Get Involved</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                    <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    <li class="nav-lang-item">
+                        <div class="lang-switcher" role="group" aria-label="Language">
+                            <button type="button" class="lang-switcher-btn" data-lang="en" aria-pressed="true">EN</button>
+                            <button type="button" class="lang-switcher-btn" data-lang="es" aria-pressed="false">ES</button>
+                            <button type="button" class="lang-switcher-btn" data-lang="vi" aria-pressed="false">VI</button>
+                            <button type="button" class="lang-switcher-btn" data-lang="ar" aria-pressed="false">AR</button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -434,29 +442,30 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>United Society Affiliates</h3>
-                    <p>A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
+                    <h3 data-i18n="common.footer.org-name">United Society Affiliates</h3>
+                    <p data-i18n="common.footer.tagline">A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="common.footer.quick-links-heading">Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-i18n="common.footer.about-us">About Us</a></li>
+                        <li><a href="#services" data-i18n="common.nav.services">Services</a></li>
+                        <li><a href="#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                        <li><a href="#contact" data-i18n="common.nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Syracuse, New York</p>
+                    <h4 data-i18n="common.footer.contact-heading">Contact</h4>
+                    <p data-i18n="common.footer.location">Syracuse, New York</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 United Society Affiliates. All rights reserved.</p>
+                <p data-i18n="common.footer.copyright">&copy; 2026 United Society Affiliates. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

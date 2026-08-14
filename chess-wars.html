@@ -35,21 +35,29 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#home" data-i18n="common.nav.home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="common.nav.about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Programs</a>
+                        <a href="#" class="dropdown-toggle" data-i18n="common.nav.programs">Programs</a>
                         <ul class="dropdown-menu">
-                            <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                            <li><a href="pal-program.html">P.A.L. Program</a></li>
-                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars">Chess Wars Series</a></li>
-                            <li><a href="big-cuzin.html">Big Cuzin'</a></li>
-                            <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
+                            <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                            <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars" data-i18n="common.nav.programs.chess-wars-series">Chess Wars Series</a></li>
+                            <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                            <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#get-involved">Get Involved</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                    <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    <li class="nav-lang-item">
+                        <div class="lang-switcher" role="group" aria-label="Language">
+                            <button type="button" class="lang-switcher-btn" data-lang="en" aria-pressed="true">EN</button>
+                            <button type="button" class="lang-switcher-btn" data-lang="es" aria-pressed="false">ES</button>
+                            <button type="button" class="lang-switcher-btn" data-lang="vi" aria-pressed="false">VI</button>
+                            <button type="button" class="lang-switcher-btn" data-lang="ar" aria-pressed="false">AR</button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -59,18 +67,18 @@
     <section class="program-hero">
         <div class="container">
             <div class="breadcrumb">
-                <a href="index.html">Home</a> / <a href="pal-program.html">P.A.L.</a> / <span>Chess Wars</span>
+                <a href="index.html" data-i18n="common.nav.home">Home</a> / <a href="pal-program.html" data-i18n="chesswars.breadcrumb.pal">P.A.L.</a> / <span data-i18n="chesswars.breadcrumb.current">Chess Wars</span>
             </div>
             <div class="program-hero-band" role="img" aria-label="Chess Wars Library. A P.A.L. Program Original Series by United Society Affiliates.">
                 <div class="hero-band-left">
-                    <p class="hero-presents">A P.A.L. Program Original Series</p>
-                    <p class="hero-pal">Chess Wars</p>
-                    <p class="hero-pal-sub">The Library</p>
+                    <p class="hero-presents" data-i18n="chesswars.hero.presents">A P.A.L. Program Original Series</p>
+                    <p class="hero-pal" data-i18n="chesswars.hero.title">Chess Wars</p>
+                    <p class="hero-pal-sub" data-i18n="chesswars.hero.subtitle">The Library</p>
                 </div>
                 <div class="hero-band-divider"></div>
                 <div class="hero-band-right">
-                    <p class="hero-tagline">Learn Before You Conquer.</p>
-                    <p class="hero-desc">Every duel, every lesson, every page — the full Chess Wars universe, organized in one place.</p>
+                    <p class="hero-tagline" data-i18n="chesswars.hero.tagline">Learn Before You Conquer.</p>
+                    <p class="hero-desc" data-i18n="chesswars.hero.description">Every duel, every lesson, every page — the full Chess Wars universe, organized in one place.</p>
                 </div>
             </div>
         </div>
@@ -80,12 +88,12 @@
     <section class="cw-library-nav">
         <div class="container">
             <ul class="cw-library-nav-list">
-                <li><a href="#graphic-novel">The Graphic Novel</a></li>
-                <li><a href="#trilogy">The Trilogy</a></li>
-                <li><a href="#duel-details">Duel Details</a></li>
-                <li><a href="#duel-index">Duel Index</a></li>
-                <li><a href="#academy">Chess Wars Academy</a></li>
-                <li><a href="#warriors">Warriors of the Board</a></li>
+                <li><a href="#graphic-novel" data-i18n="chesswars.libnav.graphic-novel">The Graphic Novel</a></li>
+                <li><a href="#trilogy" data-i18n="chesswars.libnav.trilogy">The Trilogy</a></li>
+                <li><a href="#duel-details" data-i18n="chesswars.libnav.duel-details">Duel Details</a></li>
+                <li><a href="#duel-index" data-i18n="chesswars.libnav.duel-index">Duel Index</a></li>
+                <li><a href="#academy" data-i18n="chesswars.libnav.academy">Chess Wars Academy</a></li>
+                <li><a href="#warriors" data-i18n="chesswars.libnav.warriors">Warriors of the Board</a></li>
             </ul>
         </div>
     </section>
@@ -96,67 +104,67 @@
             <!-- The Graphic Novel -->
             <section class="cw-category" id="graphic-novel">
                 <div class="cw-category-header">
-                    <h2>The Graphic Novel</h2>
-                    <p class="cw-category-sub">Volume 1 — The Host of Early America / The Knight of Early Europe</p>
+                    <h2 data-i18n="chesswars.novel.heading">The Graphic Novel</h2>
+                    <p class="cw-category-sub" data-i18n="chesswars.novel.sub">Volume 1 — The Host of Early America / The Knight of Early Europe</p>
                 </div>
                 <div class="cw-page-groups">
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-01-03.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-01-03.png" alt="Chess Wars Volume 1, pages 1-3" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 1&ndash;3</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.1-3">Pages 1&ndash;3</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-04-06.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-04-06.png" alt="Chess Wars Volume 1, pages 4-6" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 4&ndash;6</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.4-6">Pages 4&ndash;6</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-07-09.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-07-09.png" alt="Chess Wars Volume 1, pages 7-9" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 7&ndash;9</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.7-9">Pages 7&ndash;9</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-10-12.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-10-12.png" alt="Chess Wars Volume 1, pages 10-12" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 10&ndash;12</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.10-12">Pages 10&ndash;12</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-13-15.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-13-15.png" alt="Chess Wars Volume 1, pages 13-15" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 13&ndash;15</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.13-15">Pages 13&ndash;15</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-16-18.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-16-18.png" alt="Chess Wars Volume 1, pages 16-18" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 16&ndash;18</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.16-18">Pages 16&ndash;18</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-19-21.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-19-21.png" alt="Chess Wars Volume 1, pages 19-21" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 19&ndash;21</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.19-21">Pages 19&ndash;21</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-22-24.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-22-24.png" alt="Chess Wars Volume 1, pages 22-24" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 22&ndash;24</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.22-24">Pages 22&ndash;24</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol1-pages-25-27.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol1-pages-25-27.png" alt="Chess Wars Volume 1, pages 25-27" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pages 25&ndash;27</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.novel.pages.25-27">Pages 25&ndash;27</p>
                     </div>
                 </div>
                 <div class="chess-wars-download">
-                    <a href="images/chess-wars-overview.png" target="_blank" rel="noopener" class="btn chess-wars-btn-download">
+                    <a href="images/chess-wars-overview.png" target="_blank" rel="noopener" class="btn chess-wars-btn-download" data-i18n="chesswars.novel.download">
                         ⬇ Download / Print Chess Wars Overview
                     </a>
                 </div>
@@ -165,7 +173,7 @@
             <!-- The Trilogy -->
             <section class="cw-category" id="trilogy">
                 <div class="cw-category-header">
-                    <h2>The Trilogy</h2>
+                    <h2 data-i18n="chesswars.trilogy.heading">The Trilogy</h2>
                 </div>
                 <div class="chess-wars-books">
                     <div class="chess-wars-book">
@@ -174,8 +182,8 @@
                         </a>
                         <div class="chess-wars-book-content">
                             <div class="chess-wars-book-number">I</div>
-                            <h4>The Obsidian King</h4>
-                            <p>Yusuf begins his quest to avenge his father and discovers that every victory reveals a deeper truth.</p>
+                            <h4 data-i18n="chesswars.trilogy.1.title">The Obsidian King</h4>
+                            <p data-i18n="chesswars.trilogy.1.body">Yusuf begins his quest to avenge his father and discovers that every victory reveals a deeper truth.</p>
                         </div>
                     </div>
                     <div class="chess-wars-book">
@@ -184,8 +192,8 @@
                         </a>
                         <div class="chess-wars-book-content">
                             <div class="chess-wars-book-number">II</div>
-                            <h4>The Ascending Board</h4>
-                            <p>The conflict grows as the Bishops, Knights, and Rooks reveal the philosophies and alliances that shape the world.</p>
+                            <h4 data-i18n="chesswars.trilogy.2.title">The Ascending Board</h4>
+                            <p data-i18n="chesswars.trilogy.2.body">The conflict grows as the Bishops, Knights, and Rooks reveal the philosophies and alliances that shape the world.</p>
                         </div>
                     </div>
                     <div class="chess-wars-book">
@@ -194,16 +202,16 @@
                         </a>
                         <div class="chess-wars-book-content">
                             <div class="chess-wars-book-number">III</div>
-                            <h4>The Final Crown</h4>
-                            <p>Ancient secrets emerge, loyalties are tested, and the future of the Chess Order hangs in the balance.</p>
+                            <h4 data-i18n="chesswars.trilogy.3.title">The Final Crown</h4>
+                            <p data-i18n="chesswars.trilogy.3.body">Ancient secrets emerge, loyalties are tested, and the future of the Chess Order hangs in the balance.</p>
                         </div>
                     </div>
                 </div>
                 <div class="chess-wars-download">
-                    <a href="images/chess-wars-ii-the-ascending-board.png" target="_blank" rel="noopener" class="btn chess-wars-btn-download">
+                    <a href="images/chess-wars-ii-the-ascending-board.png" target="_blank" rel="noopener" class="btn chess-wars-btn-download" data-i18n="chesswars.trilogy.download2">
                         ⬇ Download / Print Chess Wars II Overview
                     </a>
-                    <a href="images/chess-wars-iii-the-final-crown.png" target="_blank" rel="noopener" class="btn chess-wars-btn-download">
+                    <a href="images/chess-wars-iii-the-final-crown.png" target="_blank" rel="noopener" class="btn chess-wars-btn-download" data-i18n="chesswars.trilogy.download3">
                         ⬇ Download / Print Chess Wars III Overview
                     </a>
                 </div>
@@ -212,21 +220,21 @@
             <!-- Duel Details -->
             <section class="cw-category" id="duel-details">
                 <div class="cw-category-header">
-                    <h2>Duel Details</h2>
-                    <p class="cw-category-sub">A closer look inside individual duels from the saga.</p>
+                    <h2 data-i18n="chesswars.duel-details.heading">Duel Details</h2>
+                    <p class="cw-category-sub" data-i18n="chesswars.duel-details.sub">A closer look inside individual duels from the saga.</p>
                 </div>
                 <div class="cw-page-groups">
                     <div class="cw-page-group">
                         <a href="images/chess-wars-duel-1-details-guardian-of-reflection-hall-of-mirrors.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-duel-1-details-guardian-of-reflection-hall-of-mirrors.png" alt="Chess Wars Duel 1 Details: The Guardian of Reflection, The Hall of Mirrors" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Duel 1: The Guardian of Reflection — The Hall of Mirrors</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.duel-details.duel1">Duel 1: The Guardian of Reflection — The Hall of Mirrors</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-duel-2-details-keeper-of-patience-desert-sentinel.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-duel-2-details-keeper-of-patience-desert-sentinel.png" alt="Chess Wars Duel 2 Details: The Keeper of Patience, The Desert Sentinel" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Duel 2: The Keeper of Patience — The Desert Sentinel</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.duel-details.duel2">Duel 2: The Keeper of Patience — The Desert Sentinel</p>
                     </div>
                 </div>
             </section>
@@ -234,21 +242,21 @@
             <!-- Duel Index -->
             <section class="cw-category" id="duel-index">
                 <div class="cw-category-header">
-                    <h2>Duel Index</h2>
-                    <p class="cw-category-sub">Sixteen duels, sixteen realms, one destiny — the world map and lessons for each volume.</p>
+                    <h2 data-i18n="chesswars.duel-index.heading">Duel Index</h2>
+                    <p class="cw-category-sub" data-i18n="chesswars.duel-index.sub">Sixteen duels, sixteen realms, one destiny — the world map and lessons for each volume.</p>
                 </div>
                 <div class="cw-page-groups">
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol2-duel-index.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol2-duel-index.png" alt="Chess Wars Volume 2: The Trials of Mastery duel index — 16 duels and lessons" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Volume 2: The Trials of Mastery</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.duel-index.vol2">Volume 2: The Trials of Mastery</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-vol3-duel-index.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-vol3-duel-index.png" alt="Chess Wars Volume 3: Legacy of the Grandmaster duel index — 16 duels and lessons" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Volume 3: Legacy of the Grandmaster</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.duel-index.vol3">Volume 3: Legacy of the Grandmaster</p>
                     </div>
                 </div>
             </section>
@@ -256,33 +264,45 @@
             <!-- Chess Wars Academy -->
             <section class="cw-category" id="academy">
                 <div class="cw-category-header">
-                    <h2>Chess Wars Academy</h2>
-                    <p class="cw-category-sub">The curriculum built from the story — for parents, schools, and mentoring programs. In partnership with the Big Cuzin' Program.</p>
+                    <h2 data-i18n="chesswars.academy.heading">Chess Wars Academy</h2>
+                    <p class="cw-category-sub" data-i18n="chesswars.academy.sub">The curriculum built from the story — for parents, schools, and mentoring programs. In partnership with the Big Cuzin' Program.</p>
                 </div>
                 <div class="cw-page-groups">
                     <div class="cw-page-group">
                         <a href="images/chess-wars-academy-slide-01-title-life-is-like-a-chessboard.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-academy-slide-01-title-life-is-like-a-chessboard.png" alt="Chess Wars Academy — Life Is Like A Chessboard: Every Move Matters, presented by Clifford Ryan Jr." class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Life Is Like A Chessboard: Every Move Matters</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.academy.slide1">Life Is Like A Chessboard: Every Move Matters</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-academy-slide-02-meet-yusuf.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-academy-slide-02-meet-yusuf.png" alt="Chess Wars Academy — Meet Yusuf Avatara" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Meet Yusuf Avatara</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.academy.slide2">Meet Yusuf Avatara</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-academy-slide-03-mirror-guardian.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-academy-slide-03-mirror-guardian.png" alt="Chess Wars Academy — Duel 1: The Mirror Guardian, the first challenge is yourself" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">Duel 1: The Mirror Guardian</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.academy.slide3">Duel 1: The Mirror Guardian</p>
                     </div>
                     <div class="cw-page-group">
                         <a href="images/chess-wars-academy-slide-04-the-pawn.png" target="_blank" rel="noopener">
                             <img src="images/chess-wars-academy-slide-04-the-pawn.png" alt="Chess Wars Academy — The Pawn: small but never insignificant" class="cw-page-thumb">
                         </a>
-                        <p class="chess-wars-caption">The Pawn: Small But Never Insignificant</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.academy.slide4">The Pawn: Small But Never Insignificant</p>
+                    </div>
+                </div>
+
+                <div class="cw-academy-materials">
+                    <h3 data-i18n="chesswars.academy.partnership-heading">Program Partnership</h3>
+                    <div class="cw-page-groups">
+                        <div class="cw-page-group">
+                            <a href="images/chess-wars-academy-big-cuzin-masterminds-flyer.png" target="_blank" rel="noopener">
+                                <img src="images/chess-wars-academy-big-cuzin-masterminds-flyer.png" alt="Masterminds Chess Club x Big Cuzin' Program partnership flyer — youth leadership, mentorship, and life success" class="cw-page-thumb">
+                            </a>
+                            <p class="chess-wars-caption" data-i18n="chesswars.academy.masterminds-caption">Masterminds Chess Club &times; Big Cuzin' Program</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -290,7 +310,7 @@
             <!-- Warriors of the Board -->
             <section class="cw-category" id="warriors">
                 <div class="cw-category-header">
-                    <h2>Warriors of the Board</h2>
+                    <h2 data-i18n="chesswars.warriors.heading">Warriors of the Board</h2>
                 </div>
                 <div class="chess-wars-grid">
                     <div class="chess-wars-card">
@@ -303,33 +323,33 @@
                         <a href="images/pal-chess-wars-pawn-warriors.png" target="_blank" rel="noopener">
                             <img src="images/pal-chess-wars-pawn-warriors.png" alt="Pawn Warriors character sheet" class="chess-wars-thumb">
                         </a>
-                        <p class="chess-wars-caption">Pawn Warriors</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.warriors.pawn">Pawn Warriors</p>
                     </div>
                     <div class="chess-wars-card">
                         <a href="images/pal-chess-wars-bishop-warriors.png" target="_blank" rel="noopener">
                             <img src="images/pal-chess-wars-bishop-warriors.png" alt="Bishop Warriors character sheet" class="chess-wars-thumb">
                         </a>
-                        <p class="chess-wars-caption">Bishop Warriors</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.warriors.bishop">Bishop Warriors</p>
                     </div>
                     <div class="chess-wars-card">
                         <a href="images/pal-chess-wars-knight-warriors.png" target="_blank" rel="noopener">
                             <img src="images/pal-chess-wars-knight-warriors.png" alt="Knight Warriors character sheet" class="chess-wars-thumb">
                         </a>
-                        <p class="chess-wars-caption">Knight Warriors</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.warriors.knight">Knight Warriors</p>
                     </div>
                     <div class="chess-wars-card">
                         <a href="images/pal-chess-wars-rook-warrior.png" target="_blank" rel="noopener">
                             <img src="images/pal-chess-wars-rook-warrior.png" alt="Rook Warrior — Fortress Guardian character sheet" class="chess-wars-thumb">
                         </a>
-                        <p class="chess-wars-caption">Rook Warrior — Fortress Guardian</p>
+                        <p class="chess-wars-caption" data-i18n="chesswars.warriors.rook">Rook Warrior — Fortress Guardian</p>
                     </div>
                 </div>
             </section>
 
             <!-- Closing -->
             <div class="chess-wars-closing">
-                <p class="chess-wars-closing-tagline">One board. Sixteen civilizations. Endless possibilities.</p>
-                <p class="chess-wars-closing-sub">Every Move Has a Story. Every Culture Holds a Lesson.</p>
+                <p class="chess-wars-closing-tagline" data-i18n="chesswars.closing.tagline">One board. Sixteen civilizations. Endless possibilities.</p>
+                <p class="chess-wars-closing-sub" data-i18n="chesswars.closing.sub">Every Move Has a Story. Every Culture Holds a Lesson.</p>
             </div>
 
         </div>
@@ -338,11 +358,11 @@
     <!-- Call to Action -->
     <section class="program-cta">
         <div class="container">
-            <h2>Bring Chess Wars to Your Community</h2>
-            <p>Explore the full P.A.L. Program or get in touch to bring the Chess Wars Academy curriculum to your school or organization.</p>
+            <h2 data-i18n="chesswars.cta.heading">Bring Chess Wars to Your Community</h2>
+            <p data-i18n="chesswars.cta.body">Explore the full P.A.L. Program or get in touch to bring the Chess Wars Academy curriculum to your school or organization.</p>
             <div class="cta-buttons">
-                <a href="pal-program.html" class="btn btn-primary">Back to P.A.L. Program</a>
-                <a href="index.html#contact" class="btn btn-secondary">Contact Us</a>
+                <a href="pal-program.html" class="btn btn-primary" data-i18n="chesswars.cta.back-to-pal">Back to P.A.L. Program</a>
+                <a href="index.html#contact" class="btn btn-secondary" data-i18n="chesswars.cta.contact-us">Contact Us</a>
             </div>
         </div>
     </section>
@@ -352,34 +372,35 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>United Society Affiliates</h3>
-                    <p>A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
+                    <h3 data-i18n="common.footer.org-name">United Society Affiliates</h3>
+                    <p data-i18n="common.footer.tagline">A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="common.footer.quick-links-heading">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                        <li><a href="pal-program.html">P.A.L. Program</a></li>
-                        <li><a href="chess-wars.html">Chess Wars</a></li>
-                        <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
-                        <li><a href="index.html#get-involved">Get Involved</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#about" data-i18n="common.footer.about-us">About Us</a></li>
+                        <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                        <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                        <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                        <li><a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a></li>
+                        <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Syracuse, New York</p>
+                    <h4 data-i18n="common.footer.contact-heading">Contact</h4>
+                    <p data-i18n="common.footer.location">Syracuse, New York</p>
                     <p>info@unitedsocietyaffiliates.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 United Society Affiliates. All rights reserved.</p>
+                <p data-i18n="common.footer.copyright">&copy; 2026 United Society Affiliates. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
