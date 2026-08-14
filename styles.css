@@ -3107,6 +3107,100 @@ a {
     width: 100%;
 }
 
+/* --- Mentor Application Web Form --- */
+.bc-mentor-form-wrapper {
+    margin-top: 2.5rem;
+}
+.bc-mentor-form {
+    max-width: 760px;
+    margin: 0 auto;
+}
+.bc-form-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.bc-form-sensitive-banner {
+    background: #fff4e5;
+    border: 2px solid #d97706;
+    color: #92400e;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+    line-height: 1.6;
+}
+.bc-form-section-heading {
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin: 2.5rem 0 1.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+.bc-form-section-heading:first-of-type {
+    margin-top: 0;
+}
+.bc-form-note {
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+.bc-form-sensitive {
+    background: #fff9ed;
+    border: 2px dashed #d97706;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.25rem 0.5rem;
+}
+.bc-sensitive-tag {
+    display: inline-block;
+    background: #d97706;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+.bc-radio-group,
+.bc-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+}
+.bc-checkbox-group-stacked {
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.bc-radio-option,
+.bc-checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+.bc-radio-option input,
+.bc-checkbox-option input {
+    width: auto;
+}
+.bc-reference-block {
+    background: var(--bg-light);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.5rem 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.bc-reference-block h4 {
+    margin: 0 0 1rem;
+    color: var(--navy);
+}
+
 /* --- Enrollment Packet (alt) --- */
 .bc-enroll-section {
     padding: 60px 0;
@@ -3142,6 +3236,12 @@ a {
 .bc-enroll-btn {
     flex-shrink: 0;
     white-space: nowrap;
+}
+.bc-enroll-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-shrink: 0;
 }
 
 /* --- CTA (dark: navy gradient) --- */
