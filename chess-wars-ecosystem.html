@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visual map of the Chess Wars ecosystem — from the graphic novel trilogy through Chess Wars Academy, tournaments, certification, partnerships, digital tools, and the store, converging on a national Chess Wars network.">
+    <title>Chess Wars Ecosystem | United Society Affiliates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8EXG07JSP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X8EXG07JSP');
+    </script>
+
+    <style>
+        /* Chess Wars Ecosystem diagram — scoped to this page only */
+        .cw-ecosystem-section {
+            padding: 60px 0 80px;
+        }
+        .cw-ecosystem-figure {
+            margin: 0 auto;
+            max-width: 760px;
+        }
+        .cw-ecosystem-figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .cw-ecosystem-caption {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(232, 224, 208, 0.65);
+            text-align: center;
+            margin-top: 1.5rem;
+            line-height: 1.7;
+        }
+        .cw-ecosystem-diagram {
+            --diagram-ink: #e8e0d0;
+            --diagram-ink-soft: rgba(232, 224, 208, 0.65);
+            --diagram-gold: #c9a227;
+            --diagram-gold-strong: #c9a227;
+            --diagram-rule: rgba(201, 162, 39, 0.35);
+            --diagram-leaf-bg: rgba(255, 255, 255, 0.04);
+            --diagram-leaf-border: rgba(201, 162, 39, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/united-society-affiliates-logo.png" alt="United Society Affiliates" class="logo-img">
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home" data-i18n="common.nav.home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="common.nav.about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-i18n="common.nav.programs">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                            <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars" data-i18n="common.nav.programs.chess-wars-series">Chess Wars Series</a></li>
+                            <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                            <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                    <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    <li class="dropdown lang-switcher">
+                        <button type="button" class="dropdown-toggle lang-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+                            <span class="lang-switcher-flag lang-flag-en"></span>
+                            <span class="lang-switcher-code">EN</span>
+                        </button>
+                        <ul class="dropdown-menu lang-switcher-menu" role="menu">
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="en" aria-pressed="true"><span class="lang-switcher-flag lang-flag-en"></span> EN</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="es" aria-pressed="false"><span class="lang-switcher-flag lang-flag-es"></span> ES</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="vi" aria-pressed="false"><span class="lang-switcher-flag lang-flag-vi"></span> VI</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="ar" aria-pressed="false"><span class="lang-switcher-flag lang-flag-ar"></span> AR</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Library Hero -->
+    <section class="program-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="common.nav.home">Home</a> / <a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a> / <span data-i18n="chesswarsecosystem.breadcrumb.current">Ecosystem</span>
+            </div>
+            <div class="program-hero-band" role="img" aria-label="Chess Wars Ecosystem. How the graphic novels, curriculum, tournaments, and partnerships fit together.">
+                <div class="hero-band-left">
+                    <p class="hero-presents" data-i18n="chesswars.hero.presents">A P.A.L. Program Original Series</p>
+                    <p class="hero-pal" data-i18n="chesswarsecosystem.hero.title">Chess Wars Ecosystem</p>
+                    <p class="hero-pal-sub" data-i18n="chesswarsecosystem.hero.subtitle">The Big Picture</p>
+                </div>
+                <div class="hero-band-divider"></div>
+                <div class="hero-band-right">
+                    <p class="hero-tagline" data-i18n="chesswarsecosystem.hero.tagline">One Story. One System.</p>
+                    <p class="hero-desc" data-i18n="chesswarsecosystem.hero.description">How the graphic novels feed a curriculum, a competitive circuit, a certification ladder, and the partnerships and products built around them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Diagram -->
+    <div class="chess-wars-section cw-ecosystem-section">
+        <div class="container">
+            <figure class="cw-ecosystem-figure">
+                <svg class="cw-ecosystem-diagram" viewBox="0 0 760 3220" role="img" aria-label="Flow diagram: the Chess Wars graphic novel trilogy feeds story-based character development into Chess Wars Academy, which branches into curriculum, mentorship, and parent-engagement tracks under Practical Application, Tournaments, Certification, Licensing and Partnerships, a Digital Learning Platform, the Chess Wars Store, and Community Impact, culminating in the long-term vision of a national Chess Wars network.">
+                    <defs>
+                        <marker id="cw-eco-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                            <path d="M0,0 L10,5 L0,10 z" fill="var(--diagram-gold-strong)"></path>
+                        </marker>
+                    </defs>
+
+                    <!-- ============ STAGE 0: Graphic Novels ============ -->
+                    <g>
+                        <text x="380" y="34" text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="2.5" fill="var(--diagram-gold-strong)">THE GRAPHIC NOVELS</text>
+                        <line x1="380" y1="46" x2="380" y2="70" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <rect x="90" y="76" width="580" height="112" rx="10" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                        <text x="380" y="110" text-anchor="middle" font-size="15" fill="var(--diagram-ink)">Volume I &middot; Pawn&rsquo;s Awakening</text>
+                        <text x="380" y="138" text-anchor="middle" font-size="15" fill="var(--diagram-ink)">Volume II &middot; Rise of the Rook</text>
+                        <text x="380" y="166" text-anchor="middle" font-size="15" fill="var(--diagram-ink)">Volume III &middot; Crown of Destiny</text>
+
+                        <line x1="380" y1="188" x2="380" y2="212" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <text x="380" y="234" text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="var(--diagram-ink-soft)">STORY-BASED CHARACTER DEVELOPMENT</text>
+                        <line x1="380" y1="246" x2="380" y2="278" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 1: Chess Wars Academy ============ -->
+                    <g>
+                        <rect x="40" y="284" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="326" text-anchor="middle" font-size="26" font-weight="600" letter-spacing="0.04em" fill="var(--diagram-gold)">CHESS WARS&trade; ACADEMY</text>
+                        <rect x="40" y="342" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="344" x2="380" y2="366" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="366" x2="630" y2="366" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="366" x2="130" y2="386" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="366" x2="380" y2="386" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="366" x2="630" y2="386" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="392" width="190" height="58" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="416" text-anchor="middle" fill="var(--diagram-ink)">Beginner Chess</text>
+                            <text x="130" y="436" text-anchor="middle" fill="var(--diagram-ink)">Curriculum</text>
+
+                            <rect x="285" y="392" width="190" height="58" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="416" text-anchor="middle" fill="var(--diagram-ink)">Leadership</text>
+                            <text x="380" y="436" text-anchor="middle" fill="var(--diagram-ink)">Training</text>
+
+                            <rect x="535" y="392" width="190" height="58" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="416" text-anchor="middle" fill="var(--diagram-ink)">Critical Thinking &amp;</text>
+                            <text x="630" y="436" text-anchor="middle" fill="var(--diagram-ink)">Problem Solving</text>
+                        </g>
+
+                        <line x1="130" y1="450" x2="130" y2="470" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="450" x2="380" y2="470" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="450" x2="630" y2="470" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="476" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="501" text-anchor="middle" fill="var(--diagram-ink)">Student Workbook</text>
+
+                            <rect x="285" y="476" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="501" text-anchor="middle" fill="var(--diagram-ink)">Mentor Guide</text>
+
+                            <rect x="535" y="476" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="501" text-anchor="middle" fill="var(--diagram-ink)">Parent Engagement</text>
+                        </g>
+
+                        <line x1="130" y1="516" x2="130" y2="536" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="516" x2="380" y2="536" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="516" x2="630" y2="536" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="542" width="190" height="58" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="566" text-anchor="middle" fill="var(--diagram-ink)">Character</text>
+                            <text x="130" y="586" text-anchor="middle" fill="var(--diagram-ink)">Development</text>
+
+                            <rect x="285" y="542" width="190" height="58" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="572" text-anchor="middle" fill="var(--diagram-ink)">Life Skills</text>
+
+                            <rect x="535" y="542" width="190" height="58" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="566" text-anchor="middle" fill="var(--diagram-ink)">Decision</text>
+                            <text x="630" y="586" text-anchor="middle" fill="var(--diagram-ink)">Making</text>
+                        </g>
+
+                        <line x1="130" y1="600" x2="130" y2="620" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="600" x2="380" y2="620" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="600" x2="630" y2="620" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="620" x2="630" y2="620" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="620" x2="380" y2="642" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 2: Practical Application ============ -->
+                    <g>
+                        <rect x="40" y="648" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="686" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">PRACTICAL APPLICATION</text>
+                        <rect x="40" y="700" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="702" x2="380" y2="722" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="722" x2="630" y2="722" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="722" x2="130" y2="742" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="722" x2="380" y2="742" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="722" x2="630" y2="742" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="748" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="773" text-anchor="middle" fill="var(--diagram-ink)">Guided Games</text>
+
+                            <rect x="285" y="748" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="773" text-anchor="middle" fill="var(--diagram-ink)">Team Challenges</text>
+
+                            <rect x="535" y="748" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="773" text-anchor="middle" fill="var(--diagram-ink)">Chess Puzzles</text>
+                        </g>
+
+                        <line x1="130" y1="788" x2="130" y2="808" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="788" x2="380" y2="808" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="788" x2="630" y2="808" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="814" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="839" text-anchor="middle" fill="var(--diagram-ink)">Weekly Matches</text>
+
+                            <rect x="285" y="814" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="839" text-anchor="middle" fill="var(--diagram-ink)">Club Meetings</text>
+
+                            <rect x="535" y="814" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="839" text-anchor="middle" fill="var(--diagram-ink)">Strategy Labs</text>
+                        </g>
+
+                        <line x1="130" y1="854" x2="130" y2="874" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="854" x2="380" y2="874" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="854" x2="630" y2="874" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="874" x2="630" y2="874" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="874" x2="380" y2="896" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 3: Tournaments ============ -->
+                    <g>
+                        <rect x="40" y="902" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="940" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">CHESS WARS&trade; TOURNAMENTS</text>
+                        <rect x="40" y="954" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="956" x2="380" y2="976" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="976" x2="630" y2="976" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="976" x2="130" y2="996" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="976" x2="380" y2="996" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="976" x2="630" y2="996" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="1002" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="1027" text-anchor="middle" fill="var(--diagram-ink)">Local Events</text>
+
+                            <rect x="285" y="1002" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="1027" text-anchor="middle" fill="var(--diagram-ink)">School Leagues</text>
+
+                            <rect x="535" y="1002" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="1027" text-anchor="middle" fill="var(--diagram-ink)">State Championships</text>
+                        </g>
+
+                        <line x1="130" y1="1042" x2="130" y2="1062" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1042" x2="380" y2="1062" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="1042" x2="630" y2="1062" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1062" x2="630" y2="1062" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1062" x2="380" y2="1082" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <rect x="285" y="1088" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-gold-strong)" stroke-width="1.5"></rect>
+                        <text x="380" y="1113" text-anchor="middle" font-size="14" font-weight="600" fill="var(--diagram-gold-strong)">National Championship</text>
+
+                        <line x1="380" y1="1128" x2="380" y2="1152" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 4: Certification ============ -->
+                    <g>
+                        <rect x="40" y="1158" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="1196" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">CHESS WARS&trade; CERTIFICATION</text>
+                        <rect x="40" y="1210" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="1212" x2="380" y2="1232" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1232" x2="630" y2="1232" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1232" x2="130" y2="1252" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="1232" x2="380" y2="1252" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="1232" x2="630" y2="1252" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="1258" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="1283" text-anchor="middle" fill="var(--diagram-ink)">Student Levels</text>
+
+                            <rect x="285" y="1258" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="1283" text-anchor="middle" fill="var(--diagram-ink)">Coach Training</text>
+
+                            <rect x="535" y="1258" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="1283" text-anchor="middle" fill="var(--diagram-ink)">Instructor License</text>
+                        </g>
+
+                        <line x1="130" y1="1298" x2="130" y2="1318" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <rect x="35" y="1324" width="190" height="150" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                        <text x="130" y="1350" text-anchor="middle" font-size="13" fill="var(--diagram-ink)">Beginner</text>
+                        <text x="130" y="1376" text-anchor="middle" font-size="13" fill="var(--diagram-ink)">Intermediate</text>
+                        <text x="130" y="1402" text-anchor="middle" font-size="13" fill="var(--diagram-ink)">Advanced</text>
+                        <text x="130" y="1428" text-anchor="middle" font-size="13" fill="var(--diagram-ink)">Chess Warrior</text>
+                        <text x="130" y="1454" text-anchor="middle" font-size="13" fill="var(--diagram-ink)">Master Mentor</text>
+
+                        <line x1="380" y1="1298" x2="380" y2="1482" stroke="var(--diagram-rule)" stroke-width="1" stroke-dasharray="3 4"></line>
+                        <line x1="630" y1="1298" x2="630" y2="1482" stroke="var(--diagram-rule)" stroke-width="1" stroke-dasharray="3 4"></line>
+
+                        <line x1="130" y1="1474" x2="130" y2="1494" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1494" x2="630" y2="1494" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1494" x2="380" y2="1516" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 5: Licensing & Partnerships ============ -->
+                    <g>
+                        <rect x="40" y="1522" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="1560" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">LICENSING &amp; PARTNERSHIPS</text>
+                        <rect x="40" y="1574" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="1576" x2="380" y2="1596" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1596" x2="630" y2="1596" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1596" x2="130" y2="1616" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="1596" x2="380" y2="1616" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="1596" x2="630" y2="1616" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="1622" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="1647" text-anchor="middle" fill="var(--diagram-ink)">School Districts</text>
+
+                            <rect x="285" y="1622" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="1647" text-anchor="middle" fill="var(--diagram-ink)">Youth Programs</text>
+
+                            <rect x="535" y="1622" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="1647" text-anchor="middle" fill="var(--diagram-ink)">Community Centers</text>
+                        </g>
+
+                        <line x1="130" y1="1662" x2="130" y2="1682" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1662" x2="380" y2="1682" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="1662" x2="630" y2="1682" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="1688" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="1713" text-anchor="middle" fill="var(--diagram-ink)">Libraries</text>
+
+                            <rect x="285" y="1688" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="1713" text-anchor="middle" fill="var(--diagram-ink)">Recreation Depts.</text>
+
+                            <rect x="535" y="1688" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="1713" text-anchor="middle" fill="var(--diagram-ink)">Faith-Based Groups</text>
+                        </g>
+
+                        <line x1="130" y1="1728" x2="130" y2="1748" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1728" x2="380" y2="1748" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="1728" x2="630" y2="1748" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="1754" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="1779" text-anchor="middle" fill="var(--diagram-ink)">Boys &amp; Girls Clubs</text>
+
+                            <rect x="285" y="1754" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="1779" text-anchor="middle" fill="var(--diagram-ink)">Nonprofits</text>
+
+                            <rect x="535" y="1754" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="1779" text-anchor="middle" fill="var(--diagram-ink)">Corporate Sponsors</text>
+                        </g>
+
+                        <line x1="130" y1="1794" x2="130" y2="1814" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1794" x2="380" y2="1814" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="1794" x2="630" y2="1814" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1814" x2="630" y2="1814" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1814" x2="380" y2="1836" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 6: Digital Learning Platform ============ -->
+                    <g>
+                        <rect x="40" y="1842" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="1880" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">DIGITAL LEARNING PLATFORM</text>
+                        <rect x="40" y="1894" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="1896" x2="380" y2="1916" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1916" x2="630" y2="1916" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="1916" x2="130" y2="1936" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="1916" x2="380" y2="1936" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="1916" x2="630" y2="1936" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="1942" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="1967" text-anchor="middle" fill="var(--diagram-ink)">Interactive Lessons</text>
+
+                            <rect x="285" y="1942" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="1967" text-anchor="middle" fill="var(--diagram-ink)">Digital Comics</text>
+
+                            <rect x="535" y="1942" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="1967" text-anchor="middle" fill="var(--diagram-ink)">Video Instruction</text>
+                        </g>
+
+                        <line x1="130" y1="1982" x2="130" y2="2002" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="1982" x2="380" y2="2002" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="1982" x2="630" y2="2002" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="2008" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2033" text-anchor="middle" fill="var(--diagram-ink)">Mobile App</text>
+
+                            <rect x="285" y="2008" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2033" text-anchor="middle" fill="var(--diagram-ink)">Tournament Portal</text>
+
+                            <rect x="535" y="2008" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2033" text-anchor="middle" fill="var(--diagram-ink)">Student Dashboard</text>
+                        </g>
+
+                        <line x1="130" y1="2048" x2="130" y2="2068" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2048" x2="380" y2="2068" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2048" x2="630" y2="2068" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="2074" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2099" text-anchor="middle" fill="var(--diagram-ink)">Instructor Portal</text>
+
+                            <rect x="285" y="2074" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2099" text-anchor="middle" fill="var(--diagram-ink)">Parent Portal</text>
+
+                            <rect x="535" y="2074" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2099" text-anchor="middle" fill="var(--diagram-ink)">Progress Tracking</text>
+                        </g>
+
+                        <line x1="130" y1="2114" x2="130" y2="2134" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2114" x2="380" y2="2134" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2114" x2="630" y2="2134" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2134" x2="630" y2="2134" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2134" x2="380" y2="2156" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 7: Chess Wars Store ============ -->
+                    <g>
+                        <rect x="40" y="2162" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="2200" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">CHESS WARS&trade; STORE</text>
+                        <rect x="40" y="2214" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="2216" x2="380" y2="2236" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2236" x2="630" y2="2236" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2236" x2="130" y2="2256" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="2236" x2="380" y2="2256" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="2236" x2="630" y2="2256" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="2262" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2287" text-anchor="middle" fill="var(--diagram-ink)">Graphic Novels</text>
+
+                            <rect x="285" y="2262" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2287" text-anchor="middle" fill="var(--diagram-ink)">Chess Sets</text>
+
+                            <rect x="535" y="2262" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2287" text-anchor="middle" fill="var(--diagram-ink)">Workbooks</text>
+                        </g>
+
+                        <line x1="130" y1="2302" x2="130" y2="2322" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2302" x2="380" y2="2322" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2302" x2="630" y2="2322" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="2328" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2353" text-anchor="middle" fill="var(--diagram-ink)">Apparel</text>
+
+                            <rect x="285" y="2328" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2353" text-anchor="middle" fill="var(--diagram-ink)">Posters</text>
+
+                            <rect x="535" y="2328" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2353" text-anchor="middle" fill="var(--diagram-ink)">Collectibles</text>
+                        </g>
+
+                        <line x1="130" y1="2368" x2="130" y2="2388" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2368" x2="380" y2="2388" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2368" x2="630" y2="2388" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="14">
+                            <rect x="35" y="2394" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2419" text-anchor="middle" fill="var(--diagram-ink)">Strategy Cards</text>
+
+                            <rect x="285" y="2394" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2419" text-anchor="middle" fill="var(--diagram-ink)">Tournament Kits</text>
+
+                            <rect x="535" y="2394" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2419" text-anchor="middle" fill="var(--diagram-ink)">Classroom Bundles</text>
+                        </g>
+
+                        <line x1="130" y1="2434" x2="130" y2="2454" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2434" x2="380" y2="2454" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2434" x2="630" y2="2454" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2454" x2="630" y2="2454" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2454" x2="380" y2="2476" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 8: Community Impact ============ -->
+                    <g>
+                        <rect x="40" y="2482" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="2520" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">COMMUNITY IMPACT</text>
+                        <rect x="40" y="2534" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="2536" x2="380" y2="2556" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2556" x2="630" y2="2556" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2556" x2="130" y2="2576" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="380" y1="2556" x2="380" y2="2576" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                        <line x1="630" y1="2556" x2="630" y2="2576" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <g font-size="13.5">
+                            <rect x="35" y="2582" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2607" text-anchor="middle" fill="var(--diagram-ink)">Increased Literacy</text>
+
+                            <rect x="285" y="2582" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2607" text-anchor="middle" fill="var(--diagram-ink)">Strategic Thinking</text>
+
+                            <rect x="535" y="2582" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2607" text-anchor="middle" fill="var(--diagram-ink)">Positive Mentoring</text>
+                        </g>
+
+                        <line x1="130" y1="2622" x2="130" y2="2642" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2622" x2="380" y2="2642" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2622" x2="630" y2="2642" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="13.5">
+                            <rect x="35" y="2648" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2673" text-anchor="middle" fill="var(--diagram-ink)">Leadership Skills</text>
+
+                            <rect x="285" y="2648" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2673" text-anchor="middle" fill="var(--diagram-ink)">Youth Engagement</text>
+
+                            <rect x="535" y="2648" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2673" text-anchor="middle" fill="var(--diagram-ink)">Academic Enrichment</text>
+                        </g>
+
+                        <line x1="130" y1="2688" x2="130" y2="2708" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2688" x2="380" y2="2708" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2688" x2="630" y2="2708" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+
+                        <g font-size="13">
+                            <rect x="35" y="2714" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="130" y="2739" text-anchor="middle" fill="var(--diagram-ink)">Family Participation</text>
+
+                            <rect x="285" y="2714" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="380" y="2734" text-anchor="middle" fill="var(--diagram-ink)">Community</text>
+                            <text x="380" y="2748" text-anchor="middle" fill="var(--diagram-ink)">Partnerships</text>
+
+                            <rect x="535" y="2714" width="190" height="40" rx="8" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-leaf-border)"></rect>
+                            <text x="630" y="2739" text-anchor="middle" fill="var(--diagram-ink)">Career Readiness</text>
+                        </g>
+
+                        <line x1="130" y1="2754" x2="130" y2="2774" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2754" x2="380" y2="2774" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="630" y1="2754" x2="630" y2="2774" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="130" y1="2774" x2="630" y2="2774" stroke="var(--diagram-gold-strong)" stroke-width="2"></line>
+                        <line x1="380" y1="2774" x2="380" y2="2798" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+                    </g>
+
+                    <!-- ============ STAGE 9: Long-Term Vision ============ -->
+                    <g>
+                        <rect x="40" y="2804" width="680" height="2" fill="var(--diagram-rule)"></rect>
+                        <text x="380" y="2842" text-anchor="middle" font-size="20" font-weight="600" letter-spacing="0.03em" fill="var(--diagram-gold)">LONG-TERM VISION</text>
+                        <rect x="40" y="2856" width="680" height="2" fill="var(--diagram-rule)"></rect>
+
+                        <line x1="380" y1="2858" x2="380" y2="2886" stroke="var(--diagram-gold-strong)" stroke-width="2" marker-end="url(#cw-eco-arrow)"></line>
+
+                        <rect x="60" y="2892" width="640" height="180" rx="12" fill="var(--diagram-leaf-bg)" stroke="var(--diagram-gold-strong)" stroke-width="1.5"></rect>
+                        <text x="380" y="2942" text-anchor="middle" font-size="17" font-weight="600" fill="var(--diagram-gold-strong)">Build a National Chess Wars&trade; Network</text>
+                        <text x="380" y="2976" text-anchor="middle" font-size="14" fill="var(--diagram-ink)">Connecting schools, families, mentors, and communities</text>
+                        <text x="380" y="3000" text-anchor="middle" font-size="14" fill="var(--diagram-ink)">through chess, storytelling, leadership development,</text>
+                        <text x="380" y="3024" text-anchor="middle" font-size="14" fill="var(--diagram-ink)">and education.</text>
+                    </g>
+                </svg>
+                <figcaption class="cw-ecosystem-caption" data-i18n="chesswarsecosystem.figcaption">Ten stages, from the graphic novel trilogy through Chess Wars Academy, tournament and certification ladders, licensing partnerships, digital tools, and retail — converging on a national Chess Wars network.</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="program-cta">
+        <div class="container">
+            <h2 data-i18n="chesswarsecosystem.cta.heading">Explore the Full Chess Wars Library</h2>
+            <p data-i18n="chesswarsecosystem.cta.body">See every volume, duel, and Academy resource that makes up the ecosystem above.</p>
+            <div class="cta-buttons">
+                <a href="chess-wars.html" class="btn btn-primary" data-i18n="chesswarsecosystem.cta.view-library">View Chess Wars Library</a>
+                <a href="index.html#contact" class="btn btn-secondary" data-i18n="chesswars.cta.contact-us">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="common.footer.org-name">United Society Affiliates</h3>
+                    <p data-i18n="common.footer.tagline">A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="common.footer.quick-links-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about" data-i18n="common.footer.about-us">About Us</a></li>
+                        <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                        <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                        <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                        <li><a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a></li>
+                        <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="common.footer.contact-heading">Contact</h4>
+                    <p data-i18n="common.footer.location">Syracuse, New York</p>
+                    <p>info@unitedsocietyaffiliates.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="common.footer.copyright">&copy; 2026 United Society Affiliates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n/i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

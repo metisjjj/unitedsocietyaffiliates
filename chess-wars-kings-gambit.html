@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="King's Gambit — an upcoming Chess Wars feature film. After 25 years in prison, King returns home not to reclaim the streets, but to teach a generation of youth the principles of chess and life.">
+    <title>King's Gambit — A Chess Wars Feature Film | United Society Affiliates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8EXG07JSP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X8EXG07JSP');
+    </script>
+
+    <style>
+        /* King's Gambit film page — scoped to this page only */
+        .kg-poster-section {
+            padding: 60px 0 20px;
+        }
+        .kg-poster-wrap {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+        .kg-poster-wrap img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+        }
+        .kg-coming-soon-badge {
+            display: inline-block;
+            background: #c9a227;
+            color: #0d1117;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            margin: 1.25rem auto 0;
+        }
+        .kg-coming-soon-wrap {
+            text-align: center;
+        }
+        .kg-logline {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #e8e0d0;
+            text-align: center;
+            max-width: 700px;
+            margin: 2.5rem auto 0;
+            line-height: 1.6;
+        }
+        .kg-synopsis {
+            max-width: 720px;
+            margin: 0 auto;
+            color: rgba(232, 224, 208, 0.85);
+            line-height: 1.85;
+        }
+        .kg-synopsis p {
+            margin-bottom: 1.25rem;
+        }
+        .kg-synopsis p:last-child {
+            margin-bottom: 0;
+        }
+        .kg-lessons-list {
+            max-width: 500px;
+            margin: 1.5rem auto 0;
+            list-style: none;
+            padding: 0;
+        }
+        .kg-lessons-list li {
+            padding: 0.6rem 0 0.6rem 2rem;
+            position: relative;
+            color: #e8e0d0;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(201, 162, 39, 0.15);
+        }
+        .kg-lessons-list li:last-child {
+            border-bottom: none;
+        }
+        .kg-lessons-list li::before {
+            content: '♟';
+            position: absolute;
+            left: 0;
+            color: #c9a227;
+        }
+        .kg-characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .kg-character-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(201, 162, 39, 0.25);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .kg-character-card h3 {
+            font-size: 1.1rem;
+            color: #c9a227;
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.03em;
+        }
+        .kg-character-card p {
+            font-size: 0.9rem;
+            color: rgba(232, 224, 208, 0.75);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .kg-expect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+        }
+        .kg-expect-item {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 3px solid #c9a227;
+            border-radius: 0.5rem;
+            padding: 1.25rem 1.5rem;
+            color: #e8e0d0;
+            font-weight: 500;
+        }
+        .kg-themes {
+            text-align: center;
+            color: rgba(232, 224, 208, 0.7);
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            margin-top: 1rem;
+        }
+        .kg-final-quote {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e8e0d0;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        .kg-final-quote span {
+            color: #c9a227;
+        }
+        .kg-hashtag {
+            text-align: center;
+            color: #c9a227;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/united-society-affiliates-logo.png" alt="United Society Affiliates" class="logo-img">
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home" data-i18n="common.nav.home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="common.nav.about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-i18n="common.nav.programs">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                            <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars" data-i18n="common.nav.programs.chess-wars-series">Chess Wars Series</a></li>
+                            <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                            <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                    <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    <li class="dropdown lang-switcher">
+                        <button type="button" class="dropdown-toggle lang-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+                            <span class="lang-switcher-flag lang-flag-en"></span>
+                            <span class="lang-switcher-code">EN</span>
+                        </button>
+                        <ul class="dropdown-menu lang-switcher-menu" role="menu">
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="en" aria-pressed="true"><span class="lang-switcher-flag lang-flag-en"></span> EN</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="es" aria-pressed="false"><span class="lang-switcher-flag lang-flag-es"></span> ES</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="vi" aria-pressed="false"><span class="lang-switcher-flag lang-flag-vi"></span> VI</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="ar" aria-pressed="false"><span class="lang-switcher-flag lang-flag-ar"></span> AR</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Film Hero -->
+    <section class="program-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="common.nav.home">Home</a> / <a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a> / <span data-i18n="kingsgambit.breadcrumb.current">King's Gambit</span>
+            </div>
+            <div class="program-hero-band" role="img" aria-label="King's Gambit. A Chess Wars Feature Film. Every move has a consequence.">
+                <div class="hero-band-left">
+                    <p class="hero-presents" data-i18n="kingsgambit.hero.presents">A Chess Wars&trade; Feature Film</p>
+                    <p class="hero-pal" data-i18n="kingsgambit.hero.title">King's Gambit</p>
+                    <p class="hero-pal-sub" data-i18n="kingsgambit.hero.subtitle">Coming Soon</p>
+                </div>
+                <div class="hero-band-divider"></div>
+                <div class="hero-band-right">
+                    <p class="hero-tagline" data-i18n="kingsgambit.hero.tagline">Every Move Has a Consequence.</p>
+                    <p class="hero-desc" data-i18n="kingsgambit.hero.description">25 years away. One life to reclaim. A whole generation to save.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chess-wars-section">
+        <div class="container">
+
+            <!-- Poster -->
+            <section class="cw-category kg-poster-section">
+                <div class="kg-poster-wrap">
+                    <a href="images/chess-wars-film-kings-gambit-coming-soon-poster.PNG" target="_blank" rel="noopener">
+                        <img src="images/chess-wars-film-kings-gambit-coming-soon-poster.PNG" alt="King's Gambit teaser poster — a Chess Wars feature film, coming soon in theaters nationwide">
+                    </a>
+                </div>
+                <div class="kg-coming-soon-wrap">
+                    <span class="kg-coming-soon-badge" data-i18n="kingsgambit.coming-soon">Coming Soon &middot; In Theaters Nationwide</span>
+                </div>
+            </section>
+
+            <!-- Logline -->
+            <section class="cw-category">
+                <p class="kg-logline" data-i18n="kingsgambit.logline">"You can't win the game of life&hellip; if you can't win the battle within."</p>
+            </section>
+
+            <!-- Synopsis -->
+            <section class="cw-category" id="synopsis">
+                <div class="cw-category-header">
+                    <h2 data-i18n="kingsgambit.synopsis.heading">The Story</h2>
+                </div>
+                <div class="kg-synopsis">
+                    <p data-i18n="kingsgambit.synopsis.p1">After spending 25 years in prison, King returns home to a neighborhood that remembers him as a legendary drug kingpin. His family expects him to reclaim his throne. His old associates expect him to return to the streets. His enemies expect him to fall.</p>
+                    <p data-i18n="kingsgambit.synopsis.p2">But King has made a different move. He picks up a chessboard.</p>
+                    <p data-i18n="kingsgambit.synopsis.p3">Using the world of Chess Wars, King begins teaching neighborhood youth the principles of chess&mdash;and the principles of life:</p>
+                </div>
+                <ul class="kg-lessons-list">
+                    <li data-i18n="kingsgambit.lesson.think-ahead">Think ahead.</li>
+                    <li data-i18n="kingsgambit.lesson.control-emotions">Control your emotions.</li>
+                    <li data-i18n="kingsgambit.lesson.understand-consequences">Understand consequences.</li>
+                    <li data-i18n="kingsgambit.lesson.protect-king">Protect your King.</li>
+                    <li data-i18n="kingsgambit.lesson.know-sacrifice">Know when to sacrifice.</li>
+                    <li data-i18n="kingsgambit.lesson.underestimate-pawn">Never underestimate the Pawn.</li>
+                </ul>
+                <div class="kg-synopsis">
+                    <p data-i18n="kingsgambit.synopsis.p4">But King's success threatens people who have spent years trying to reach the same young people. As his youth movement explodes, envy, politics, territorialism, and old street rivalries begin closing in.</p>
+                    <p data-i18n="kingsgambit.synopsis.p5">Then the ghosts of King's past return.</p>
+                    <p data-i18n="kingsgambit.synopsis.p6">His estranged 25-year-old son struggles to forgive the father who wasn't there to raise him. His family wants the old King back. His former lover Angela unexpectedly returns, awakening a love they thought had died twenty-five years ago.</p>
+                    <p data-i18n="kingsgambit.synopsis.p7">And then comes Victor &ldquo;Viper&rdquo; Stone&mdash;King's old drug-dealing nemesis. Viper spent decades building the empire King left behind. King's return already threatens his pride. But King's decision to leave the streets without the police, the competition, or the graveyard taking him down threatens something even more valuable: Viper's future generation of recruits.</p>
+                    <p data-i18n="kingsgambit.synopsis.p8">Now the battle isn't being fought over territory. It's being fought over the minds of the youth.</p>
+                    <p data-i18n="kingsgambit.synopsis.p9">And King is about to discover that the hardest game he's ever played isn't chess. It's forgiveness.</p>
+                </div>
+            </section>
+
+            <!-- Meet the Key Players -->
+            <section class="cw-category" id="characters">
+                <div class="cw-category-header">
+                    <h2 data-i18n="kingsgambit.characters.heading">Meet the Key Players</h2>
+                </div>
+                <div class="kg-characters-grid">
+                    <div class="kg-character-card">
+                        <h3 data-i18n="kingsgambit.character.king.name">King</h3>
+                        <p data-i18n="kingsgambit.character.king.desc">A changed man with a purpose greater than power.</p>
+                    </div>
+                    <div class="kg-character-card">
+                        <h3 data-i18n="kingsgambit.character.jayden.name">Jayden</h3>
+                        <p data-i18n="kingsgambit.character.jayden.desc">His son. His hardest opponent to win over.</p>
+                    </div>
+                    <div class="kg-character-card">
+                        <h3 data-i18n="kingsgambit.character.angela.name">Angela</h3>
+                        <p data-i18n="kingsgambit.character.angela.desc">His first love. The flame that never died.</p>
+                    </div>
+                    <div class="kg-character-card">
+                        <h3 data-i18n="kingsgambit.character.nia.name">Nia</h3>
+                        <p data-i18n="kingsgambit.character.nia.desc">His partner in purpose. The love that believes in his future.</p>
+                    </div>
+                    <div class="kg-character-card">
+                        <h3 data-i18n="kingsgambit.character.marcus.name">Marcus</h3>
+                        <p data-i18n="kingsgambit.character.marcus.desc">His brother. Still running the streets. Wants the old King back.</p>
+                    </div>
+                    <div class="kg-character-card">
+                        <h3 data-i18n="kingsgambit.character.viper.name">Viper Stone</h3>
+                        <p data-i18n="kingsgambit.character.viper.desc">His old nemesis. He wants the throne&mdash;but more, he wants the future.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What to Expect -->
+            <section class="cw-category" id="what-to-expect">
+                <div class="cw-category-header">
+                    <h2 data-i18n="kingsgambit.expect.heading">What to Expect</h2>
+                </div>
+                <div class="kg-expect-grid">
+                    <div class="kg-expect-item" data-i18n="kingsgambit.expect.drama">High-stakes drama</div>
+                    <div class="kg-expect-item" data-i18n="kingsgambit.expect.performances">Powerful performances</div>
+                    <div class="kg-expect-item" data-i18n="kingsgambit.expect.lessons">Inspiring life lessons</div>
+                    <div class="kg-expect-item" data-i18n="kingsgambit.expect.world">The world of Chess Wars</div>
+                    <div class="kg-expect-item" data-i18n="kingsgambit.expect.purpose">Action. Heart. Purpose.</div>
+                </div>
+                <p class="kg-themes" data-i18n="kingsgambit.themes">A story of Redemption &middot; Family &middot; Love &middot; Rivalry &middot; Leadership &middot; Youth &middot; Second Chances</p>
+            </section>
+
+            <!-- Closing -->
+            <div class="chess-wars-closing">
+                <p class="kg-final-quote" data-i18n="kingsgambit.closing.quote">Sometimes the greatest move a King can make&hellip; is <span>stepping off the throne.</span></p>
+                <p class="chess-wars-closing-tagline" data-i18n="kingsgambit.closing.tagline">The Game Has Changed. Now King Must Change the Players.</p>
+                <p class="kg-hashtag">#TheGameHasChanged</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="program-cta">
+        <div class="container">
+            <h2 data-i18n="kingsgambit.cta.heading">Explore the Chess Wars Universe</h2>
+            <p data-i18n="kingsgambit.cta.body">King's Gambit is inspired by the Chess Wars graphic novel series and the Chess Wars Academy program.</p>
+            <div class="cta-buttons">
+                <a href="chess-wars.html" class="btn btn-primary" data-i18n="chesswarsecosystem.cta.view-library">View Chess Wars Library</a>
+                <a href="index.html#contact" class="btn btn-secondary" data-i18n="chesswars.cta.contact-us">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="common.footer.org-name">United Society Affiliates</h3>
+                    <p data-i18n="common.footer.tagline">A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="common.footer.quick-links-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about" data-i18n="common.footer.about-us">About Us</a></li>
+                        <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                        <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                        <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                        <li><a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a></li>
+                        <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="common.footer.contact-heading">Contact</h4>
+                    <p data-i18n="common.footer.location">Syracuse, New York</p>
+                    <p>info@unitedsocietyaffiliates.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="common.footer.copyright">&copy; 2026 United Society Affiliates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n/i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
