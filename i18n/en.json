@@ -19,6 +19,7 @@
   "common.nav.programs.pal": "P.A.L. Program",
   "common.nav.programs.sotsa": "State of the Streets Address",
   "common.nav.services": "Services",
+  "common.shop-cta": "Shop Cuzin' Merch",
   "_comment_index": "Home page (index.html)",
   "index.affiliates.heading": "Affiliates",
   "index.affiliates.subtitle": "Organizations and businesses we proudly work alongside",
@@ -570,6 +571,7 @@
   "merch.hats.heading": "Hats",
   "merch.hero.subtitle": "Official Online Store",
   "merch.hero.tagline": "Wear the Name. Represent the Movement.",
+  "merch.hero.shop-now": "Shop the Store",
   "merch.hero.title": "Cuzin' Merchandise",
   "merch.intro.body": "Apparel &middot; Hats &middot; Hoodies &middot; Tees &middot; Sweatshirts &middot; &amp; More",
   "merch.intro.heading": "More Than Clothing. It's a Movement.",
@@ -612,5 +614,10 @@
   "merch.shop.quality.title": "Quality You Can Trust",
   "merch.store-cta.body": "For product details, sizing, colors, order information &amp; more.",
   "merch.store-cta.button": "shop.unitedsocietyaffiliates.org",
-  "merch.store-cta.heading": "Visit Our Online Store"
+  "merch.store-cta.heading": "Visit Our Online Store",
+  "_comment_merchmodal": "Shop Cuzin' Merchandise pop-up modal (merch-modal.js) — shown once per visitor on index.html and big-cuzin.html",
+  "merchmodal.body": "Hoodies, hats, sweatsuits, and more. Wear the name. Represent the movement. A portion of proceeds supports the Big Cuzin' Program.",
+  "merchmodal.heading": "Shop Cuzin' Merchandise",
+  "merchmodal.no-thanks": "No thanks",
+  "merchmodal.shop-now": "Shop Now"
 }

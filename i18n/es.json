@@ -19,6 +19,7 @@
   "common.nav.programs.pal": "Programa P.A.L.",
   "common.nav.programs.sotsa": "State of the Streets Address",
   "common.nav.services": "Servicios",
+  "common.shop-cta": "Comprar Mercancía Cuzin'",
   "_comment_index": "Home page (index.html)",
   "index.affiliates.heading": "Afiliados",
   "index.affiliates.subtitle": "Organizaciones y negocios con los que trabajamos con orgullo",
@@ -568,6 +569,7 @@
   "merch.cta.heading": "Hombres Reales. Guía Real. Impacto Real.",
   "merch.cta.learn-more": "Aprende Sobre Big Cuzin'",
   "merch.hats.heading": "Gorras",
+  "merch.hero.shop-now": "Visita la Tienda",
   "merch.hero.subtitle": "Tienda Oficial en Línea",
   "merch.hero.tagline": "Viste el Nombre. Representa el Movimiento.",
   "merch.hero.title": "Mercancía Cuzin'",
@@ -612,5 +614,10 @@
   "merch.shop.quality.title": "Calidad en la Que Puedes Confiar",
   "merch.store-cta.body": "Para detalles de productos, tallas, colores, información de pedidos &amp; más.",
   "merch.store-cta.button": "shop.unitedsocietyaffiliates.org",
-  "merch.store-cta.heading": "Visita Nuestra Tienda en Línea"
+  "merch.store-cta.heading": "Visita Nuestra Tienda en Línea",
+  "_comment_merchmodal": "Shop Cuzin' Merchandise pop-up modal (merch-modal.js) — shown once per visitor on index.html and big-cuzin.html",
+  "merchmodal.body": "Sudaderas, gorras, conjuntos deportivos y más. Viste el nombre. Representa el movimiento. Una parte de las ganancias apoya al Programa Big Cuzin'.",
+  "merchmodal.heading": "Compra Mercancía Cuzin'",
+  "merchmodal.no-thanks": "No, gracias",
+  "merchmodal.shop-now": "Comprar Ahora"
 }

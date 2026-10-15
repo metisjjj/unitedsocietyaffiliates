@@ -30,14 +30,30 @@
         });
     }
 
-    function applyDictionary(dict) {
-        document.querySelectorAll('[data-i18n]').forEach((el) => {
+    let currentDict = null;
+
+    function applyDictionaryTo(root, dict) {
+        root.querySelectorAll('[data-i18n]').forEach((el) => {
+            if (el.dataset.i18nOriginal === undefined) {
+                el.dataset.i18nOriginal = el.innerHTML;
+            }
             const original = el.dataset.i18nOriginal;
             const value = dict && dict[el.getAttribute('data-i18n')];
             const html = value || original; // fall back to the original English if no entry
             if (html === undefined) return;
             el.innerHTML = html;
         });
+    }
+
+    function applyDictionary(dict) {
+        currentDict = dict;
+        applyDictionaryTo(document, dict);
+    }
+
+    // Lets content injected after initial load (e.g. a modal) pick up the
+    // current language without re-processing the whole document.
+    function translateSubtree(root) {
+        applyDictionaryTo(root, currentDict);
     }
 
     function applyDirection(lang) {
@@ -75,11 +91,11 @@
         if (persist) localStorage.setItem(STORAGE_KEY, lang);
     }
 
-    window.usaI18n = { setLanguage, getStoredLang, SUPPORTED };
+    window.usaI18n = { setLanguage, getStoredLang, translateSubtree, SUPPORTED, ready: null };
 
     document.addEventListener('DOMContentLoaded', () => {
         snapshotOriginals();
-        setLanguage(getStoredLang(), { persist: false });
+        window.usaI18n.ready = setLanguage(getStoredLang(), { persist: false });
 
         document.querySelectorAll('.lang-switcher-option').forEach((btn) => {
             btn.addEventListener('click', () => {

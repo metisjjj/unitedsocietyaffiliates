@@ -19,6 +19,7 @@
   "common.nav.programs.pal": "برنامج P.A.L.",
   "common.nav.programs.sotsa": "State of the Streets Address",
   "common.nav.services": "الخدمات",
+  "common.shop-cta": "تسوّق منتجات Cuzin'",
   "_comment_index": "Home page (index.html)",
   "index.affiliates.heading": "الشركاء التابعون",
   "index.affiliates.subtitle": "منظمات وشركات نفخر بالعمل إلى جانبها",
@@ -568,6 +569,7 @@
   "merch.cta.heading": "رجال حقيقيون. توجيه حقيقي. أثر حقيقي.",
   "merch.cta.learn-more": "اعرف المزيد عن Big Cuzin'",
   "merch.hats.heading": "القبعات",
+  "merch.hero.shop-now": "تسوّق المتجر",
   "merch.hero.subtitle": "المتجر الإلكتروني الرسمي",
   "merch.hero.tagline": "ارتدِ الاسم. مثّل الحركة.",
   "merch.hero.title": "منتجات Cuzin'",
@@ -612,5 +614,10 @@
   "merch.shop.quality.title": "جودة يمكنك الوثوق بها",
   "merch.store-cta.body": "لتفاصيل المنتجات، والمقاسات، والألوان، ومعلومات الطلب &amp; المزيد.",
   "merch.store-cta.button": "shop.unitedsocietyaffiliates.org",
-  "merch.store-cta.heading": "زُر متجرنا الإلكتروني"
+  "merch.store-cta.heading": "زُر متجرنا الإلكتروني",
+  "_comment_merchmodal": "Shop Cuzin' Merchandise pop-up modal (merch-modal.js) — shown once per visitor on index.html and big-cuzin.html",
+  "merchmodal.body": "هوديز وقبعات وأطقم رياضية والمزيد. ارتدِ الاسم. مثّل الحركة. يدعم جزء من الأرباح برنامج Big Cuzin'.",
+  "merchmodal.heading": "تسوّق منتجات Cuzin'",
+  "merchmodal.no-thanks": "لا شكرًا",
+  "merchmodal.shop-now": "تسوّق الآن"
 }

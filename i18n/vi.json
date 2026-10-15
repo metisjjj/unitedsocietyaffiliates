@@ -19,6 +19,7 @@
   "common.nav.programs.pal": "Chương Trình P.A.L.",
   "common.nav.programs.sotsa": "State of the Streets Address",
   "common.nav.services": "Dịch Vụ",
+  "common.shop-cta": "Mua Đồ Cuzin' Merch",
   "_comment_index": "Home page (index.html)",
   "index.affiliates.heading": "Đối Tác Liên Kết",
   "index.affiliates.subtitle": "Các tổ chức và doanh nghiệp chúng tôi tự hào hợp tác cùng",
@@ -568,6 +569,7 @@
   "merch.cta.heading": "Những Người Đàn Ông Thật Sự. Sự Hướng Dẫn Thật Sự. Tác Động Thật Sự.",
   "merch.cta.learn-more": "Tìm Hiểu Về Big Cuzin'",
   "merch.hats.heading": "Mũ",
+  "merch.hero.shop-now": "Mua Sắm Ngay",
   "merch.hero.subtitle": "Cửa Hàng Trực Tuyến Chính Thức",
   "merch.hero.tagline": "Mặc Lên Cái Tên. Đại Diện Cho Phong Trào.",
   "merch.hero.title": "Đồ Lưu Niệm Cuzin'",
@@ -612,5 +614,10 @@
   "merch.shop.quality.title": "Chất Lượng Đáng Tin Cậy",
   "merch.store-cta.body": "Để biết chi tiết sản phẩm, kích cỡ, màu sắc, thông tin đặt hàng &amp; nhiều hơn nữa.",
   "merch.store-cta.button": "shop.unitedsocietyaffiliates.org",
-  "merch.store-cta.heading": "Ghé Thăm Cửa Hàng Trực Tuyến Của Chúng Tôi"
+  "merch.store-cta.heading": "Ghé Thăm Cửa Hàng Trực Tuyến Của Chúng Tôi",
+  "_comment_merchmodal": "Shop Cuzin' Merchandise pop-up modal (merch-modal.js) — shown once per visitor on index.html and big-cuzin.html",
+  "merchmodal.body": "Áo hoodie, mũ, bộ đồ thể thao và nhiều hơn nữa. Mặc lên cái tên. Đại diện cho phong trào. Một phần lợi nhuận sẽ hỗ trợ Chương Trình Big Cuzin'.",
+  "merchmodal.heading": "Mua Đồ Cuzin' Merch",
+  "merchmodal.no-thanks": "Không, cảm ơn",
+  "merchmodal.shop-now": "Mua Ngay"
 }
