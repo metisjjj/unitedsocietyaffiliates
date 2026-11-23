@@ -3377,6 +3377,76 @@ a {
     color: var(--navy);
 }
 
+/* --- Youth Sign-Up Form (top of Big Cuzin' page) --- */
+.bc-signup-section {
+    padding: 60px 0;
+    background: var(--bg-section-alt);
+    scroll-margin-top: 80px;
+}
+.bc-signup-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0.75rem;
+    border-top: 6px solid var(--primary-color);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    padding: 2rem 2rem 2.25rem;
+}
+.bc-signup-card h2 {
+    margin: 0 0 0.5rem;
+    color: var(--navy);
+    text-align: center;
+}
+.bc-signup-intro {
+    text-align: center;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+.bc-signup-form .form-group label::after {
+    content: " *";
+    color: #c0392b;
+}
+.bc-initials-input {
+    max-width: 8rem;
+    text-transform: uppercase;
+}
+.bc-initials-note {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+}
+.bc-signup-form .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.bc-signup-error {
+    background: #fdecea;
+    border: 2px solid #c0392b;
+    color: #7f1d1d;
+    border-radius: 0.5rem;
+    padding: 0.85rem 1rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+.bc-signup-error[hidden] {
+    display: none;
+}
+.bc-signup-thanks-card {
+    text-align: center;
+}
+.bc-signup-thanks-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+    .bc-signup-card {
+        padding: 1.5rem 1.25rem 1.75rem;
+    }
+}
+
 /* --- Enrollment Packet (alt) --- */
 .bc-enroll-section {
     padding: 60px 0;
