@@ -155,7 +155,7 @@
                 <p class="hero-subtitle" data-i18n="bigcuzin.hero.subtitle">Real Men. Real Guidance. Real Impact.</p>
                 <p class="bc-tagline" data-i18n="bigcuzin.hero.tagline">Guiding Today. Empowering Tomorrow.</p>
                 <div class="hero-buttons">
-                    <a href="#signup" class="btn btn-primary">Sign Up for Big Cuzin'</a>
+                    <a href="#signup" class="btn btn-primary" data-i18n="bigcuzin.signup.heading">Sign Up for Big Cuzin'</a>
                     <a href="big-cuzin-merch.html" class="btn btn-shop" data-i18n="common.shop-cta">Shop Cuzin' Merch</a>
                 </div>
                 <div class="bc-memorial">
@@ -172,8 +172,8 @@
     <section id="signup" class="bc-signup-section">
         <div class="container">
             <div class="bc-signup-card">
-                <h2>Sign Up for Big Cuzin'</h2>
-                <p class="bc-signup-intro">Be a part of something greater! A parent or guardian should complete this form for each participant. All fields are required.</p>
+                <h2 data-i18n="bigcuzin.signup.heading">Sign Up for Big Cuzin'</h2>
+                <p class="bc-signup-intro" data-i18n="bigcuzin.signup.intro">Be a part of something greater! A parent or guardian should complete this form for each participant. All fields are required.</p>
 
                 <form class="contact-form bc-signup-form" id="youthSignupForm" action="https://formspree.io/f/mdegppjn" method="POST">
                     <input type="hidden" name="_subject" value="New Big Cuzin' Youth Sign-Up">
@@ -183,29 +183,29 @@
                     <input type="text" name="_gotcha" class="bc-form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
                     <div class="form-group">
-                        <label for="signup-participant-name">Participant Name</label>
+                        <label for="signup-participant-name" data-i18n="bigcuzin.signup.label.participant-name">Participant Name</label>
                         <input type="text" id="signup-participant-name" name="participant_name" required autocomplete="off" pattern=".*\S.*" title="Please enter the participant's name.">
                     </div>
                     <div class="form-group">
-                        <label for="signup-age-grade">Age / Grade</label>
-                        <input type="text" id="signup-age-grade" name="age_grade" required autocomplete="off" pattern=".*\S.*" placeholder="e.g. 14 / 9th grade" title="Please enter the participant's age or grade.">
+                        <label for="signup-age-grade" data-i18n="bigcuzin.signup.label.age-grade">Age / Grade</label>
+                        <input type="text" id="signup-age-grade" name="age_grade" required autocomplete="off" pattern=".*\S.*" placeholder="14 / 9" title="Please enter the participant's age or grade.">
                     </div>
                     <div class="form-group">
-                        <label for="signup-guardian-name">Parent / Guardian Name</label>
+                        <label for="signup-guardian-name" data-i18n="bigcuzin.signup.label.guardian-name">Parent / Guardian Name</label>
                         <input type="text" id="signup-guardian-name" name="parent_guardian_name" required autocomplete="name" pattern=".*\S.*" title="Please enter the parent or guardian's name.">
                     </div>
                     <div class="form-group">
-                        <label for="signup-contact">Phone or Email</label>
-                        <input type="text" id="signup-contact" name="phone_or_email" required inputmode="email" autocomplete="email tel" pattern="(?:[^\s@]+@[^\s@]+\.[^\s@]{2,}|\(?\d{3}\)?[\s.\-]?\d{3}[\s.\-]?\d{4})" title="Enter a valid email address (name@example.com) or a 10-digit phone number (315-555-1234)." placeholder="name@example.com or 315-555-1234">
+                        <label for="signup-contact" data-i18n="bigcuzin.signup.label.contact">Phone or Email</label>
+                        <input type="text" id="signup-contact" name="phone_or_email" required inputmode="email" autocomplete="email tel" pattern="(?:[^\s@]+@[^\s@]+\.[^\s@]{2,}|\(?\d{3}\)?[\s.\-]?\d{3}[\s.\-]?\d{4})" title="Enter a valid email address (name@example.com) or a 10-digit phone number (315-555-1234)." placeholder="name@example.com / 315-555-1234">
                     </div>
                     <div class="form-group">
-                        <label for="signup-initials">Parent / Guardian Initials</label>
+                        <label for="signup-initials" data-i18n="bigcuzin.signup.label.initials">Parent / Guardian Initials</label>
                         <input type="text" id="signup-initials" name="parent_guardian_initials" class="bc-initials-input" required maxlength="6" autocomplete="off" pattern="(?=.*[A-Za-z])[A-Za-z.]{1,6}" title="Please enter your initials (letters only, up to 6 characters).">
-                        <p class="bc-form-note bc-initials-note">By entering my initials, I confirm that I am this participant's parent or legal guardian and that I approve of their involvement in the Big Cuzin' program.</p>
+                        <p class="bc-form-note bc-initials-note" data-i18n="bigcuzin.signup.initials-note">By entering my initials, I confirm that I am this participant's parent or legal guardian and that I approve of their involvement in the Big Cuzin' program.</p>
                     </div>
 
-                    <p class="bc-signup-error" id="youthSignupError" role="alert" hidden>Sorry, something went wrong and your sign-up was not sent. Please try again, or call 315-317-1018.</p>
-                    <button type="submit" class="btn btn-primary">Submit Sign-Up</button>
+                    <p class="bc-signup-error" id="youthSignupError" role="alert" hidden data-i18n="bigcuzin.signup.error">Sorry, something went wrong and your sign-up was not sent. Please try again, or call 315-317-1018.</p>
+                    <button type="submit" class="btn btn-primary" data-i18n="bigcuzin.signup.submit">Submit Sign-Up</button>
                 </form>
             </div>
         </div>

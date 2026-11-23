@@ -3291,12 +3291,20 @@ a {
     max-width: 760px;
     margin: 0 auto;
 }
+/* Honeypot: visually hidden without a large left offset, which would create ~10,000px of
+   horizontal scroll on right-to-left (Arabic) pages. */
 .bc-form-honeypot {
     position: absolute;
-    left: -9999px;
     width: 1px;
     height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
     overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    opacity: 0;
+    pointer-events: none;
 }
 .bc-form-sensitive-banner {
     background: #fff4e5;
@@ -3440,6 +3448,25 @@ a {
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
+}
+/* The global .btn-primary / .btn-secondary are styled for dark backgrounds (white fill / white outline);
+   on the white thank-you card they need gold fill and gold outline instead. */
+.bc-signup-thanks-actions .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.bc-signup-thanks-actions .btn-primary:hover {
+    background-color: var(--primary-dark);
+    color: #fff;
+}
+.bc-signup-thanks-actions .btn-secondary {
+    background-color: transparent;
+    color: var(--primary-dark);
+    border: 2px solid var(--primary-color);
+}
+.bc-signup-thanks-actions .btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 @media (max-width: 768px) {
     .bc-signup-card {

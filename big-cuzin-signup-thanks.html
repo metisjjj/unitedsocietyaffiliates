@@ -46,21 +46,33 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#home" data-i18n="common.nav.home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="common.nav.about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Programs</a>
+                        <a href="#" class="dropdown-toggle" data-i18n="common.nav.programs">Programs</a>
                         <ul class="dropdown-menu">
-                            <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                            <li><a href="pal-program.html">P.A.L. Program</a></li>
-                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars">Chess Wars Series</a></li>
-                            <li><a href="big-cuzin.html">Big Cuzin'</a></li>
-                            <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
+                            <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                            <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                            <li class="dropdown-subitem"><a href="pal-program.html#chess-wars" data-i18n="common.nav.programs.chess-wars-series">Chess Wars Series</a></li>
+                            <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                            <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#get-involved">Get Involved</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                    <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
+                    <li class="dropdown lang-switcher">
+                        <button type="button" class="dropdown-toggle lang-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+                            <span class="lang-switcher-flag lang-flag-en"></span>
+                            <span class="lang-switcher-code">EN</span>
+                        </button>
+                        <ul class="dropdown-menu lang-switcher-menu" role="menu">
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="en" aria-pressed="true"><span class="lang-switcher-flag lang-flag-en"></span> EN</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="es" aria-pressed="false"><span class="lang-switcher-flag lang-flag-es"></span> ES</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="vi" aria-pressed="false"><span class="lang-switcher-flag lang-flag-vi"></span> VI</button></li>
+                            <li role="none"><button type="button" role="menuitem" class="lang-switcher-option" data-lang="ar" aria-pressed="false"><span class="lang-switcher-flag lang-flag-ar"></span> AR</button></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -71,10 +83,10 @@
         <div class="container">
             <div class="bc-hero-text">
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <a href="big-cuzin.html">Big Cuzin'</a> / <span>Sign-Up Received</span>
+                    <a href="index.html" data-i18n="common.nav.home">Home</a> / <a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a> / <span data-i18n="bigcuzin.signupthanks.breadcrumb">Sign-Up Received</span>
                 </div>
-                <h1>Thank You!</h1>
-                <p class="hero-subtitle">Your Big Cuzin' sign-up has been received.</p>
+                <h1 data-i18n="bigcuzin.signupthanks.title">Thank You!</h1>
+                <p class="hero-subtitle" data-i18n="bigcuzin.signupthanks.subtitle">Your Big Cuzin' sign-up has been received.</p>
             </div>
         </div>
     </section>
@@ -83,11 +95,11 @@
     <section id="signup-thanks" class="bc-signup-section">
         <div class="container">
             <div class="bc-signup-card bc-signup-thanks-card">
-                <h2>You're on the list.</h2>
-                <p class="bc-signup-intro">A member of the United Society Affiliates team will follow up using the phone number or email you provided. Thank you for being a part of something greater.</p>
+                <h2 data-i18n="bigcuzin.signupthanks.heading">You're on the list.</h2>
+                <p class="bc-signup-intro" data-i18n="bigcuzin.signupthanks.body">A member of the United Society Affiliates team will follow up using the phone number or email you provided. Thank you for being a part of something greater.</p>
                 <div class="bc-signup-thanks-actions">
-                    <a href="big-cuzin.html" class="btn btn-primary">Back to Big Cuzin'</a>
-                    <a href="index.html" class="btn btn-secondary">Go to Home</a>
+                    <a href="big-cuzin.html" class="btn btn-primary" data-i18n="bigcuzin.signupthanks.back">Back to Big Cuzin'</a>
+                    <a href="index.html" class="btn btn-secondary" data-i18n="bigcuzin.signupthanks.home">Go to Home</a>
                 </div>
             </div>
         </div>
@@ -98,35 +110,36 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>United Society Affiliates</h3>
-                    <p>A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
+                    <h3 data-i18n="common.footer.org-name">United Society Affiliates</h3>
+                    <p data-i18n="common.footer.tagline">A nonprofit organization dedicated to improving access to vital information, services, and resources for communities with limited support systems.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="common.footer.quick-links-heading">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="neutral-ground.html">Neutral Ground</a></li>
-                        <li><a href="pal-program.html">P.A.L. Program</a></li>
-                        <li><a href="chess-wars.html">Chess Wars</a></li>
-                        <li><a href="big-cuzin.html">Big Cuzin'</a></li>
-                        <li><a href="state-of-the-streets-address.html">State of the Streets Address</a></li>
-                        <li><a href="index.html#get-involved">Get Involved</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#about" data-i18n="common.footer.about-us">About Us</a></li>
+                        <li><a href="index.html#services" data-i18n="common.nav.services">Services</a></li>
+                        <li><a href="neutral-ground.html" data-i18n="common.nav.programs.neutral-ground">Neutral Ground</a></li>
+                        <li><a href="pal-program.html" data-i18n="common.nav.programs.pal">P.A.L. Program</a></li>
+                        <li><a href="chess-wars.html" data-i18n="common.nav.programs.chess-wars">Chess Wars</a></li>
+                        <li><a href="big-cuzin.html" data-i18n="common.nav.programs.big-cuzin">Big Cuzin'</a></li>
+                        <li><a href="state-of-the-streets-address.html" data-i18n="common.nav.programs.sotsa">State of the Streets Address</a></li>
+                        <li><a href="index.html#get-involved" data-i18n="common.nav.get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-i18n="common.nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Syracuse, New York</p>
+                    <h4 data-i18n="common.footer.contact-heading">Contact</h4>
+                    <p data-i18n="common.footer.location">Syracuse, New York</p>
                     <p>info@unitedsocietyaffiliates.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 United Society Affiliates. All rights reserved.</p>
+                <p data-i18n="common.footer.copyright">&copy; 2026 United Society Affiliates. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="i18n/i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
