@@ -2785,6 +2785,79 @@ a {
     box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
+/* Clickable hero flyer + full-size lightbox (opened by script.js for a[data-lightbox]) */
+.bc-poster-link {
+    display: block;
+    position: relative;
+    border-radius: 0.75rem;
+    cursor: zoom-in;
+}
+.bc-poster-link::after {
+    content: "+";
+    position: absolute;
+    inset-block-end: 0.6rem;
+    inset-inline-end: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    font: 700 1.4rem/1.85rem sans-serif;
+    text-align: center;
+    pointer-events: none;
+}
+.bc-poster-link:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+}
+.bc-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(5, 10, 20, 0.93);
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.bc-lightbox.bc-lightbox-open {
+    opacity: 1;
+}
+.bc-lightbox img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(100vh - 2rem);
+    max-height: calc(100dvh - 2rem);
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+.bc-lightbox-close {
+    position: absolute;
+    top: 0.75rem;
+    inset-inline-end: 0.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.bc-lightbox-close:hover,
+.bc-lightbox-close:focus-visible {
+    background: var(--primary-color);
+    outline: none;
+}
+
 .bc-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;

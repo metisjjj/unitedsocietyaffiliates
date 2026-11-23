@@ -160,6 +160,77 @@ window.addEventListener('resize', () => {
     }
 });
 
+// Lightbox: <a data-lightbox href="full-size-image.png"><img ...></a> opens the image fitted to the screen.
+// Without JavaScript (or with a modified click such as ctrl/cmd-click) it behaves as a normal link.
+(function () {
+    const CLOSE_LABELS = { en: 'Close', es: 'Cerrar', vi: 'Đóng', ar: 'إغلاق' };
+    let overlay = null;
+    let trigger = null;
+
+    function close() {
+        if (!overlay) return;
+        const el = overlay;
+        overlay = null;
+        document.removeEventListener('keydown', onKeydown, true);
+        document.body.style.overflow = '';
+        el.classList.remove('bc-lightbox-open');
+        setTimeout(() => el.remove(), 200);
+        if (trigger) trigger.focus();
+        trigger = null;
+    }
+
+    function onKeydown(e) {
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            close();
+        } else if (e.key === 'Tab') {
+            // Only one focusable control (the close button): keep focus inside the dialog.
+            e.preventDefault();
+            overlay.querySelector('.bc-lightbox-close').focus();
+        }
+    }
+
+    function open(link) {
+        if (overlay) return;
+        trigger = link;
+        const thumb = link.querySelector('img');
+        const alt = thumb ? thumb.getAttribute('alt') || '' : '';
+        const lang = document.documentElement.getAttribute('lang') || 'en';
+
+        overlay = document.createElement('div');
+        overlay.className = 'bc-lightbox';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-label', alt);
+
+        const img = document.createElement('img');
+        img.src = link.getAttribute('href');
+        img.alt = alt;
+
+        const closeBtn = document.createElement('button');
+        closeBtn.type = 'button';
+        closeBtn.className = 'bc-lightbox-close';
+        closeBtn.setAttribute('aria-label', CLOSE_LABELS[lang] || CLOSE_LABELS.en);
+        closeBtn.innerHTML = '&times;';
+
+        overlay.appendChild(img);
+        overlay.appendChild(closeBtn);
+        overlay.addEventListener('click', close); // backdrop, image, or button: any click closes
+        document.body.appendChild(overlay);
+        document.body.style.overflow = 'hidden';
+        document.addEventListener('keydown', onKeydown, true);
+        closeBtn.focus();
+        requestAnimationFrame(() => overlay && overlay.classList.add('bc-lightbox-open'));
+    }
+
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[data-lightbox]');
+        if (!link || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        open(link);
+    });
+})();
+
 // Page Load Animation
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
